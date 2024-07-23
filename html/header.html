@@ -1,0 +1,89 @@
+<nav class="nav-b">
+    <a href="./devsisters.html">My5K</a>
+    <ul>
+        <li class="list"><a href="./about.html">2024 My5k</a></li>
+        <li class="list"><a href="./kingdom.html">GAMES</a>
+            <!-- <ul class="list3">
+                <li><a class="list-2-yellow" href="./kingdom.html">OUR GAMES</a></li>
+                <li><a href="./kingdom.html">쿠키런: 오븐브레이크</a></li>
+                <li><a href="./kingdom.html">쿠키런: 킹덤</a></li>
+                <li><a href="./kingdom.html">쿠키런: 퍼즐 월드</a></li>
+                <li><a href="./kingdom.html">데드 사이드 클럽</a></li>
+                <li><a class="list-2-yellow" href="./kingdom.html">OUR GAMES</a></li>
+                <li><a href="./kingdom.html">쿠키런: 오븐 스매시</a></li>
+                <li><a href="./kingdom.html">브릭시티</a></li>
+            </ul> -->
+        </li>
+        <li class="list"><a href="./stories.html">STORIES</a>
+            <!-- <ul class="list3">
+                <li><a href="./stories.html">뉴스</a></li>
+                <li><a href="./stories.html">스토리</a></li>
+                <li><a href="./stories.html">소셜 미디어</a></li>
+            </ul> -->
+        </li>
+        <li class="list"><a href="./investors.html">INVESTORS</a>
+            <!-- <ul class="list3">
+                <li><a href="./investors.html">기업지배구조</a></li>
+                <li><a href="./investors.html">재무정보</a></li>
+                <li><a href="./investors.html">공시정보</a></li>
+                <li><a href="./investors.html">IR정보</a></li>
+                <li><a href="./investors.html">주가정보</a></li>
+            </ul> -->
+        </li>
+    </ul>
+    <a class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
+</nav>
+<!-- <div class="subm list3">
+</div> -->
+<article class="burger">
+    <div class="burger-top">
+        <a href="./devsisters.html">DEVSISTERS</a>
+        <a class="close">x</a>
+    </div>
+    <div class="burger-list">
+        <a href="./about.html">ABOUT</a>
+        <a href="./kingdom.html">GAMES</a>
+        <a href="./stories.html">STORIES</a>
+        <a href="./investors.html">INVESTORS</a>
+    </div>
+</article>
+<script>
+    const elBurger = document.querySelector('.burger-ic');
+    const elBurgers = document.querySelector('.burger');
+    const elClose = document.querySelector('.close');
+
+    elBurger.onclick = function(){
+        elBurgers.classList.add('active');
+    }
+    
+    elClose.onclick = function(){
+        elBurgers.classList.remove('active');
+    }
+
+    $(".list").on('mouseenter',function(){
+        $(".list3 ").stop().slideDown()
+    })
+
+    $(".list").on('mouseleave',function(){
+        $(".list3").stop().slideUp()
+    })   
+
+
+    let pos = {y:0,y2:0,status:true};
+    const elBg = document.querySelector('header');
+        
+    window.addEventListener('scroll',function(){
+    pos.y = window.pageYOffset;
+
+    pos.status = (pos.y > pos.y2) ? true : false;
+    pos.y2 = pos.y;
+
+    if(pos.status){ 
+        elBg.classList.add('active')
+    }
+
+    if( window.pageYOffset == 0) {
+        elBg.classList.remove('active')
+    }
+})
+</script>

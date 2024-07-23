@@ -1,0 +1,233 @@
+$wid : 1280px;
+@import url("./reset.css");
+
+@mixin reset {margin:0;padding:0;}
+@mixin flex($x, $y){ 
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;
+}
+@mixin font($z,$d) {font-weight: $z;font-size: $d;}
+
+body, html{
+    @include reset;
+    font-family : 'Pretendard',sans-serif;
+}
+.title-row{
+    width: $wid;
+    margin: 0 auto;
+    @include flex (space-between, center){};
+}
+.font-title {
+    font-family: 'acumin-pro-condensed';
+    @include font(900, 90px);
+    font-style: italic;
+    color: #fe5e00;
+    width: $wid;
+    margin: 100px auto 0 auto;
+    line-height: 1;
+    .font-subtitle {
+        font-family: 'acumin-pro-condensed';
+        @include font(600, 50px);
+        font-style: italic;
+        color: #f8e8da;
+        line-height: 1;
+        padding: 0 20px;
+    }
+  }
+
+.search-row{
+    margin: 120px auto 0 auto;
+    @include flex (space-between, flex-start){};
+    border-radius: 50px;
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    padding: 12px 25px;
+    .search {
+      width: 160px;
+      @include font(800, 18px);
+      background-color: #000000;
+      outline: none;
+      border: 0;
+      color:#fff;
+    }
+    >div {
+      width: 20px; height: 20px;
+      &::after{
+        color: white;
+          content: "search";
+          width: 20px;
+          height: 20px;
+          font-family: "Material Symbols Outlined";
+          vertical-align: middle;
+          font-size: 25px;
+          margin:0;
+      }
+    }
+}
+    
+  
+p {white-space: pre-line;}
+a {text-decoration: none; color:#000;}
+*{box-sizing: border-box}
+
+body {position: relative;}
+
+.m-video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    > img {
+      width: 100%;
+      height: 850px;
+      object-fit: cover;
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+.brave {
+margin: 0 auto;
+width: $wid;
+height: 850px;
+padding: 500px 0 100px 0;
+    >p { 
+        @include flex(space-between,start ){flex-direction: column};
+        line-height: 1;
+        font-family: 'acumin-pro-condensed';
+        @include font(900, 80px);
+        font-style: italic;
+        color: white;
+        >span {
+            @include font(900, 120px);
+        }
+    }
+}
+.a1-con {
+    display: flex;
+    overflow: hidden;
+    width: $wid;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    figure {
+      width: 30%; height: 420px;
+      border: 1px solid rgb(201, 201, 201);
+      border-radius: 20px;
+      margin: 15px;
+          
+      
+      &:hover{
+        box-shadow: 0px 10px 10px #999999;
+        transform: translateY(-7%);
+        transition: 0.5s;
+      }
+        
+
+    > img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0 ;
+        overflow: hidden;
+    }
+    > figcaption{
+        height: 220px;
+        padding: 30px;
+        @include flex(space-between,start){flex-direction: column};
+        >p{
+          width: 100%;
+          @include font(600, 16px);
+          &:nth-of-type(2){
+            @include flex(flex-start,center){}
+            flex-wrap: wrap;
+            >a{
+              background-color: #ff8200;
+              color: white;
+              padding: 5px 10px;
+              border-radius: 25px;
+              font-size: 12px;
+              margin: 2px;
+            }
+          }
+        }  
+      }
+    }
+  }
+
+  .search-r{
+    width: $wid;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .search-r-div{
+      width: 400px;
+      height: 100px;
+      padding: 30px 0;
+      background-color: #fe5e00;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      margin: 20px 0;
+      @include font(400, 30px);
+    }
+  }
+  .banner{
+    width: $wid;
+    margin: 100px auto;
+    background-color: #f8e8da;
+    border-radius: 10px;
+    position: relative;
+    .banner-col{
+      padding: 50px 60px;
+    }
+    >img{
+      position: absolute;
+      top : -10%;
+      right: 10%
+    }
+    
+   }
+   .bt-black {
+    width: $wid;
+    margin: 20px auto;
+    @include font(600, 16px);
+    >a {
+      background-color: black;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 100px;
+      &::after{
+        content: 'arrow_forward_ios';
+        font-family: 'Material Symbols Outlined';
+        vertical-align: middle;
+        margin: 5px;
+      }
+      &:hover{background-color: #fe5e00;}
+    }
+  }
+
+   .b-title{
+    @include font(900, 60px);
+    margin: 0 0 30px 0; 
+    line-height: 0.9;
+   }
+
+.tags {
+width: $wid;
+margin: 30px auto 50px auto;
+    .tag{
+        @include font(600, 20px);
+        flex-wrap: wrap;
+        background-color: #ff8200;
+        color: white;
+        padding: 16px 30px;
+        border-radius: 50px;
+        margin: 7px 2px;
+    }
+}  
+
+
+@import "./m_stories";

@@ -1,0 +1,9 @@
+
+@mixin reset {margin:0;padding:0;}
+@mixin flex($x, $y){ 
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;
+}
+@mixin font($z,$d) {font-weight: $z;font-size: $d;}

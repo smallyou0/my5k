@@ -1,0 +1,437 @@
+// @media (max-width:1280px) {
+//   header {
+//     .nav-b {
+//       width: 100%;
+//       ul {
+//         .list {
+//           padding:0 2vw;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+  @import "_mixin";
+
+  * { box-sizing: border-box; }
+
+  $wid : 100%;
+
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    height: 60px;
+
+    .nav-b {
+        width: $wid;
+
+        @include flex(space-between, flex-start) {}
+
+        margin: 0 auto;
+        padding: 12px 0;
+        z-index: 999;
+        position: relative;
+
+        >a {
+            @include font(600, 25px);
+            color: white;
+        }
+
+        >div {
+            color: white;
+            @include font(900, 1.5rem);
+        }
+
+        >ul {
+            @include flex(space-between, flex-start) {}
+
+            padding: 0;
+
+            .list {
+                width: 120px;
+                list-style-type: none;
+                padding: 7px 0 0 0;
+                color: white;
+
+                >a {
+                    @include font(600, 14px);
+                    color: white;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+header.active{
+    background-color: #fe5e00;
+}
+
+  
+
+  footer {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background-color: #fe5e00;
+
+    .ft {
+      color: white;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .ft-top {
+      width: $wid;
+      margin: 0px auto;
+
+      @include flex(space-between, baseline) {}
+
+      >div:nth-of-type(1) {
+          @include flex(space-between, start) {
+              flex-direction: column;
+          }
+
+          font-size: 15px;
+      }
+
+      .ft-toggle {
+          width: 60%;
+          display: flex;
+          flex-direction:column;
+          justify-content: flex-end;
+          
+          .material-symbols-outlined:after {
+            content: 'expand_more';
+            font-family: 'Material Symbols Outlined';
+            font-size: 20px;
+          }
+        }
+  }
+  .ft-t-row{
+      width: 100%;
+      border-bottom: 2px solid white;
+      @include flex(space-between, flex-end) {} 
+      >p{
+          @include font(600, 20px);
+          align-items: center;
+          position: relative;    
+          display: block;
+          padding: 10px 0;
+      }
+      >p.active{
+          @include font(600, 20px);
+          align-items: center;
+          position: relative;    
+      }
+  }
+  .ft-t-column {
+      position: relative;
+      top: 0;
+      @include flex(space-between, flex-start) {flex-direction:column}
+      >div{
+          padding: 10px 0;
+          border-bottom: 2px solid white;
+          position: absolute;
+          top: 0;
+          display: none;
+          line-height: 1.5;
+          >a{
+              color: white;
+          @include font(600, 20px);
+          }
+      }
+  }
+ 
+
+    .ft-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      flex : block;
+
+      >li {
+        padding-right: 10px;
+        @include font(400, 16px);
+        line-height: 1.5;
+        margin: 0;
+      }
+      .ft-arrow::after {
+        content: 'arrow_outward';
+        font-family: 'Material Symbols Outlined';
+        vertical-align: middle;
+        font-size: 18px;
+        margin-left: 5px;
+      }
+    }
+
+
+    .ft-logo {
+      width: $wid;
+      margin: 0 auto;
+
+      >svg {
+        width: 80%;
+        padding: 120px 0 20px 0;
+      }
+    }
+
+    .ft-last {
+      width: $wid;
+      margin: 0px auto;
+    }
+
+    .ft-sns {
+      @include flex(space-between, center) {}
+
+      ;
+      width: $wid;
+      margin: 10px auto;
+
+      >ul {
+        @include flex(space-between, center) {
+          gap: 30px
+        }
+
+        ;
+
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  @import "_mixin";
+
+  * {
+    box-sizing: border-box;
+  }
+
+  $wid : 100%;
+
+
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .nav-b {
+      width: $wid;
+
+      @include flex(space-between, center) {}
+
+      margin: 0 auto;
+      padding: 12px 0;
+
+      >a {
+        @include font(600, 25px);
+        color: white;
+      }
+
+      >div {
+        color: white;
+        @include font(900, 1.5rem);
+      }
+
+      >ul {
+        @include flex(space-between, center) {}
+        display: none;
+        padding: 0;
+
+        >li {
+          list-style-type: none;
+          padding-left: 10px;
+          color: white;
+
+          >a {
+            @include font(600, 14px);
+            color: white;
+          }
+
+          .burger-ic {
+            list-style-type: none;
+            padding-left: 10px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
+
+.subm, .list3 {
+    display: none;
+}
+
+
+  footer {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background-color: #fe5e00;
+
+    .ft {
+      color: white;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .ft-top {
+      width: $wid;
+      margin: 0px auto;
+      
+      @include flex(space-between, baseline) {flex-direction: column;}
+
+      >div:nth-of-type(1) {
+          @include flex(space-between, start) {
+              flex-direction: column;
+          }
+          order: 2;
+          font-size: 20px;
+      }
+
+      .ft-toggle {
+          width: 100%;
+          display: flex;
+          flex-direction:column;
+          justify-content: flex-end;
+          margin-bottom: 30px;
+          
+          .material-symbols-outlined:after {
+            content: 'expand_more';
+            font-family: 'Material Symbols Outlined';
+            font-size: 20px;
+          }
+        }
+  }
+  .ft-t-row{
+     
+      width: 100%;
+      border-bottom: 2px solid white;
+      @include flex(space-between, flex-end) {} 
+      >p{
+          @include font(600, 25px);
+          align-items: center;
+          position: relative;    
+          display: block;
+          padding: 10px 0;
+      }
+      >p.active{
+          @include font(600, 25px);
+          align-items: center;
+          position: relative;    
+      }
+  }
+  .ft-t-column {
+      position: relative;
+      top: 0;
+      @include flex(space-between, flex-start) {flex-direction:column}
+      >div{
+          padding: 10px 0;
+          border-bottom: 2px solid white;
+          position: absolute;
+          top: 0;
+          z-index: 2;
+          background-color:#fe5e00;
+          display: none;
+          line-height: 1.5;
+          width: $wid;
+          
+          >a{
+              color: white;
+          @include font(600, 20px);
+          @include flex(space-between, flex-start) {flex-direction:column}
+          }
+      }
+  }
+ 
+
+    .ft-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      flex : block;
+      
+      >li {
+        padding-right: 10px;
+        @include font(400, 20px);
+        line-height: 1.5;
+        margin: 0;
+      }
+    }
+    .ft-arrow::after {
+      content: 'arrow_outward';
+      font-family: 'Material Symbols Outlined';
+      vertical-align: middle;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+     
+
+    .ft-logo {
+      width: $wid;
+      margin: 0 auto;
+
+      >svg {
+        width: 80%;
+        padding: 120px 0 20px 0;
+      }
+    }
+
+    .ft-last {
+      width: $wid;
+      margin: 0px auto;
+    }
+
+    .ft-sns {
+      @include flex(space-between, center) {}
+
+      width: $wid;
+      margin: 10px auto;
+
+      >ul {
+        @include flex(space-between, center) {
+          gap: 30px;
+        }
+      }
+    }
+  }
+
+
+}

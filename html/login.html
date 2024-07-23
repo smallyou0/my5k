@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My5k</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="join-wrap">
+            <h2>로그인</h2>
+            <ul>
+                <li>
+                    <label class="label" for="">아이디</label>
+                    <div class="align">
+                        <input type="text" placeholder="아이디를 입력해주세요.">
+                        <button class="btn-sub" type="button">중복 확인</button>
+                    </div>
+                </li>
+                <li>
+                    <label class="label" for="">비밀번호</label>
+                    <input type="password" placeholder="6~30자 영문, 숫자 조합">
+                </li>
+                
+            </ul>
+            <div class="align both">
+                <div>
+                    <input type="checkbox">
+                    <label for="">아이디 저장</label>
+                </div>
+                <a class="link" href="#none">계정 찾기</a>
+            </div>
+            <button class="btn-main" type="button">가입하기</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
+    const elGif = document.querySelector('.ico-heart');
+            window.addEventListener('scroll',function(){
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
+
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
+        
+            if(pos2.status){ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+            else{ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+        })
+</script>
