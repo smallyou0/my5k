@@ -11,17 +11,25 @@
 //   }
 // }
 
+
 @media screen and (max-width: 1200px) {
   @import "_mixin";
-
-  * { box-sizing: border-box; }
-
- 
-
-
-
   
-
+  * { box-sizing: border-box; }
+  .leaflet { 
+    display: block;
+    .spot { 
+      img { 
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+    .post-it { 
+      background: url(../img/main/img_postit2.png);
+      padding: 40px;
+      margin-top: 50px;
+    }
+  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -29,7 +37,7 @@
     background-color: #F60035;
     background-color: #F60035;
     .inner {
-      padding: 40px;
+      padding: 40px 16px;
       .ft1 {
         > div{
           &.align {
@@ -39,9 +47,54 @@
             margin-left: 0;
           }
         }
+        &.align {
+          display: block !important;
+        }
+      }
+      .ft2 {
+        padding-bottom: 26px;
+        > div > .align {
+          display: block !important;
+          &.pb10 {
+            padding-bottom: 0;
+          }
+          p:nth-child(1) {
+            margin-left: 0 !important;
+
+          }
+          > .align {
+            padding-bottom: 8px;
+          }
+
+        }
+        &.align {
+          display: block !important;
+        }
+        .tel {
+          text-align: left;
+          padding-top: 20px;
+        }
+      }
+      .ft3 {
+        p {
+          font-size: 13px;
+        }
+        &.align {
+          flex-direction: column;
+          flex-direction: column-reverse;
+          align-items: start;
+        }
+        .sns {
+          padding-bottom: 10px;
+        }
       }
     }
- 
+    .text1 {
+      font-size: 13px;
+    }
+    .text2 {
+      font-size: 13px;
+    } 
 
     .ft-list {
       width: 100%;
@@ -67,7 +120,7 @@
 
 
     .ft-logo {
-      width: $wid;
+      // width: $wid;
       margin: 0 auto;
 
       >svg {
@@ -77,7 +130,7 @@
     }
 
     .ft-last {
-      width: $wid;
+      // width: $wid;
       margin: 0px auto;
     }
 
@@ -85,7 +138,7 @@
       @include flex(space-between, center) {}
 
       ;
-      width: $wid;
+      // width: $wid;
       margin: 10px auto;
 
       >ul {
@@ -99,11 +152,10 @@
     }
   }
 
-
-
 } /*1200 end*/
 
 @media screen and (max-width: 720px) {
+  @import "_mixin";
   header {
     position: fixed;
     left: 0;
@@ -155,13 +207,149 @@
         }
     }
 }
+.brave {
+  padding: 0 16px;
+  img {
+    width: 200px;
+  }
+  button {
+    height: 40px;
+    max-width: 500px;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 18px;
+  }
+}
+.font-title {
+  font-size: 32px !important;
+  margin: 40px auto 0 auto;
+}
+.atc-con {
+  .text1 {
+    font-size: 18px !important;
+  }
+  .text2 {
+    font-size: 15px !important;
+  }
+  .text3 { 
+    font-size: 20px;
+  }
+  >p {
+    margin: 10px auto !important;
+  }
+}
+.font-sub { 
+  font-size: 20px;
+
+}
+.who { 
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.who .who-list { padding: 16px; }
+.who .who-list>p:nth-of-type(2) { font-size: 30px; }
+.who .who-list p span { 
+  font-size: 16px;
+}
+.img-move2 .img-move { display: none;}
+.img-move2 { padding-top: 0; }
+.img-move2>figure>img { width: 150%; }
+.img-move3>figure>img { width: 150%; }
+.move-wrap .img-move3 { display: none; }
+.banner-main { 
+  margin-top: -30px;
+}
+.move-wrap .img-move { display: none; }
+.space { padding: 0 16px; }
+.space2 { padding: 20px 16px; }
+.list-type1 { 
+  padding-top: 0; 
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;    .year {
+      font-size: 20px;
+    }
+    .info {
+      font-size: 20px;
+      line-height: 100%;
+      p {
+        font-size: 12px;
+      }
+      &.pb24 { 
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+.map { 
+  margin-top: 40px;
+  height: 400px;
+}
+.leaflet { 
+  // grid-template-columns: 1fr;
+  display: block;
+  padding-bottom: 40px;
+  
+  .post-it {
+    height: auto;
+    margin-top: 20px;
+    background: #EBEBEB;
+    padding: 16px ;
+  }
+  .text1 {
+    font-size: 14px;
+  }
+  .text2 { 
+    font-size: 12px;
+    white-space: wrap;
+    span { 
+      font-size: 10px;
+    }
+  }
+  .text3 {
+    white-space: wrap;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .highlight {
+    &.pd20 {
+      padding: 10px;
+    }
+  }
+}
+.banner-wrap {
+  &.pt400 {
+    padding-top: 100px;
+  }
+}
+.guide {
+  .pt100 {
+    padding-top: 20px;
+  }
+}
+footer { 
+  margin-top: 0;
+  h1 {
+    img { width: 70px;}
+  }
+}
+footer .tel p { font-size: 16px;}
+footer .tel a { 
+  font-size: 20px;
+}
 
 header.active{
     background-color: #F60035;
 }
 .btn-login {
   display: none;
+  &.align {
+    display: none !important;
+  }
 }
+.burger-ic { display: block; }
 
 }
 
