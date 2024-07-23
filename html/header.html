@@ -2,88 +2,68 @@
     <a href="./devsisters.html">My5K</a>
     <ul>
         <li class="list"><a href="./about.html">2024 My5k</a></li>
-        <li class="list"><a href="./kingdom.html">GAMES</a>
-            <!-- <ul class="list3">
-                <li><a class="list-2-yellow" href="./kingdom.html">OUR GAMES</a></li>
-                <li><a href="./kingdom.html">쿠키런: 오븐브레이크</a></li>
-                <li><a href="./kingdom.html">쿠키런: 킹덤</a></li>
-                <li><a href="./kingdom.html">쿠키런: 퍼즐 월드</a></li>
-                <li><a href="./kingdom.html">데드 사이드 클럽</a></li>
-                <li><a class="list-2-yellow" href="./kingdom.html">OUR GAMES</a></li>
-                <li><a href="./kingdom.html">쿠키런: 오븐 스매시</a></li>
-                <li><a href="./kingdom.html">브릭시티</a></li>
-            </ul> -->
-        </li>
-        <li class="list"><a href="./stories.html">STORIES</a>
-            <!-- <ul class="list3">
-                <li><a href="./stories.html">뉴스</a></li>
-                <li><a href="./stories.html">스토리</a></li>
-                <li><a href="./stories.html">소셜 미디어</a></li>
-            </ul> -->
-        </li>
-        <li class="list"><a href="./investors.html">INVESTORS</a>
-            <!-- <ul class="list3">
-                <li><a href="./investors.html">기업지배구조</a></li>
-                <li><a href="./investors.html">재무정보</a></li>
-                <li><a href="./investors.html">공시정보</a></li>
-                <li><a href="./investors.html">IR정보</a></li>
-                <li><a href="./investors.html">주가정보</a></li>
-            </ul> -->
-        </li>
+        <li class="list"><a href="./kingdom.html">행사 후원</a></li>
     </ul>
     <a class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
+    <a class="btn-login align vm" href="login.html"><img class="mr6" src="../img/main/ico_login.svg" alt="">로그인</a>
 </nav>
-<!-- <div class="subm list3">
-</div> -->
 <article class="burger">
     <div class="burger-top">
-        <a href="./devsisters.html">DEVSISTERS</a>
+        <a href="./devsisters.html">MY5k</a>
         <a class="close">x</a>
     </div>
     <div class="burger-list">
-        <a href="./about.html">ABOUT</a>
-        <a href="./kingdom.html">GAMES</a>
-        <a href="./stories.html">STORIES</a>
-        <a href="./investors.html">INVESTORS</a>
+        <a href="./about.html">My5k</a>
+        <a href="./kingdom.html">행사 후원</a>
     </div>
 </article>
 <script>
-    const elBurger = document.querySelector('.burger-ic');
-    const elBurgers = document.querySelector('.burger');
-    const elClose = document.querySelector('.close');
+    $(document).ready(function() {
+        // 현재 페이지의 URL을 가져옵니다.
+        const currentPage = window.location.pathname;
 
-    elBurger.onclick = function(){
-        elBurgers.classList.add('active');
-    }
-    
-    elClose.onclick = function(){
-        elBurgers.classList.remove('active');
-    }
+        // login.html 페이지가 아니라면 스크립트를 실행합니다.
+        if (!currentPage.includes('login.html')) {
+            const elBurger = document.querySelector('.burger-ic');
+            const elBurgers = document.querySelector('.burger');
+            const elClose = document.querySelector('.close');
 
-    $(".list").on('mouseenter',function(){
-        $(".list3 ").stop().slideDown()
-    })
+            elBurger.onclick = function(){
+                elBurgers.classList.add('active');
+            }
 
-    $(".list").on('mouseleave',function(){
-        $(".list3").stop().slideUp()
-    })   
+            elClose.onclick = function(){
+                elBurgers.classList.remove('active');
+            }
 
+            $(".list").on('mouseenter',function(){
+                $(".list3 ").stop().slideDown()
+            })
 
-    let pos = {y:0,y2:0,status:true};
-    const elBg = document.querySelector('header');
-        
-    window.addEventListener('scroll',function(){
-    pos.y = window.pageYOffset;
+            $(".list").on('mouseleave',function(){
+                $(".list3").stop().slideUp()
+            })
 
-    pos.status = (pos.y > pos.y2) ? true : false;
-    pos.y2 = pos.y;
+            let pos = {y:0,y2:0,status:true};
+            const elBg = document.querySelector('header');
+            
+            window.addEventListener('scroll',function(){
+                pos.y = window.pageYOffset;
 
-    if(pos.status){ 
-        elBg.classList.add('active')
-    }
+                pos.status = (pos.y > pos.y2) ? true : false;
+                pos.y2 = pos.y;
 
-    if( window.pageYOffset == 0) {
-        elBg.classList.remove('active')
-    }
-})
+                if(pos.status){ 
+                    elBg.classList.add('active')
+                }
+
+                if( window.pageYOffset == 0) {
+                    elBg.classList.remove('active')
+                }
+            });
+        } else {
+            // login.html 페이지인 경우 header의 배경색을 빨간색으로 설정합니다.
+            $('header').css('background', 'red');
+        }
+    });
 </script>

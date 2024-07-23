@@ -47,62 +47,13 @@ $wid : 1280px;
     align-items: flex-end;
   }
 
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-ExtraBold.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-Heavy.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../../fonts/SUITE-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUITE';
-    src: url('../fonts/SUITE-SemiBold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-}
 
 body, html{
     @include reset;
-    font-family : 'SUITE',sans-serif;
+    font-family : 'Pretendard',sans-serif;
 }
 
 .font-title {
-    font-family: 'SUITE';
     @include font(900, 90px);
     // font-style: italic;
     color: #F60035;
@@ -112,7 +63,6 @@ body, html{
   }
 .font-sub {
     color: #000;
-    font-family: 'SUITE';
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -126,6 +76,11 @@ a {text-decoration: none; color:#000;}
 
 body {position: relative;}
 
+.wrap2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 .m-video {
     width: 100%;
     position: absolute;
@@ -329,24 +284,29 @@ body {position: relative;}
         margin-bottom: 80px;
         .year {
             color:#F60035;
-            font-family: 'SUITE';
             font-size: 50px;
             font-style: normal;
             font-weight: 900;
         }
         .info {
             color: #000;
-            font-family: 'SUITE';
             font-size: 40px;
             font-weight: 600;
         }
     }
 }
 .join-wrap {
-    padding-top: 300px;
     width: 100%;
     max-width: 440px;
     margin: 0 auto;
+    .phrase {
+        color: #F60035;
+        font-family: 'Pretendard';
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 12px;
+    }
     h2 {
         color: #222;
         text-align: center;
@@ -405,7 +365,6 @@ body {position: relative;}
                 width: 100px;
                 height: 50px;
                 background: #FEE5EB;
-                font-family: 'SUITE';
                 color: #F60035;
                 text-align: center;
                 font-size: 17px;
@@ -428,7 +387,6 @@ body {position: relative;}
         border: 0;
         height: 50px;border-radius: 4px;
         color: #fff;
-        font-family: 'SUITE';
         font-size: 17px;
         font-weight: 700;
     }
@@ -483,6 +441,17 @@ body {position: relative;}
   .form__radio-input:checked + .form__radio-label .form__radio-button:after {
     opacity: 1;
   }
+  .link {
+    text-decoration: underline;
+    color: #626262;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;    
+    &.red {
+        color: #F60035;
+    }
+  }
 
 
 .relative {
@@ -501,19 +470,31 @@ body {position: relative;}
 .ml24 {
     margin-left: 24px;
 }
+.mr6 {
+    margin-right: 6px;
+}
 .mt16 {
     margin-top: 16px;
 }
 .pt26 {
     padding-top: 26px;
 }
+.pt35 {
+    padding-top: 35px;
+}
 .pb10 {
     padding-bottom: 10px;
+}
+.pb12 {
+    padding-bottom: 12px;
 }
 .pb24 {
     padding-bottom: 24px;
 }
 .pb32 {
     padding-bottom: 32px;
+}
+.pb35 {
+    padding-bottom: 35px;
 }
   @import "./m_about";
