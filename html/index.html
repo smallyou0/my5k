@@ -338,30 +338,41 @@ const elGif = document.querySelector('.ico-heart');
             }
         });
 
-    // 애니메이션을 제어할 요소 선택
-    const imgMove2 = document.querySelector('.img-move2 > figure > img');
-    const imgMove3 = document.querySelector('.img-move3 > figure > img');
 
-    // 스크롤 이벤트 리스너 추가
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY;
-        const triggerPosition2 = 300; // 애니메이션을 시작할 스크롤 위치 (예시로 300px 설정)
-        const triggerPosition3 = 600; // 다른 애니메이션을 시작할 스크롤 위치 (예시로 600px 설정)
+document.addEventListener('DOMContentLoaded', () => {
+  // 애니메이션을 제어할 요소 선택
+  const imgMove2 = document.querySelector('.img-move2 > figure > img');
+  const imgMove3 = document.querySelector('.img-move3 > figure > img');
+  const imgMove2Container = document.querySelector('.img-move2');
+  const imgMove3Container = document.querySelector('.img-move3');
 
-        // imgMove2 애니메이션 제어
-        if (scrollPosition > triggerPosition2) {
-            imgMove2.classList.remove('no-animation');
-        } else {
-            imgMove2.classList.add('no-animation');
-        }
+  // img-move2 요소의 탑값 계산
+  const imgMove2Top = imgMove2Container.getBoundingClientRect().top + window.scrollY;
+  const triggerPosition2 = imgMove2Top - 200; // 애니메이션을 시작할 스크롤 위치
 
-        // imgMove3 애니메이션 제어
-        if (scrollPosition > triggerPosition3) {
-            imgMove3.classList.remove('no-animation');
-        } else {
-            imgMove3.classList.add('no-animation');
-        }
-    });
+  // img-move3 요소의 탑값 계산
+  const imgMove3Top = imgMove3Container.getBoundingClientRect().top + window.scrollY;
+  const triggerPosition3 = imgMove3Top - 200; // 애니메이션을 시작할 스크롤 위치
+
+  // 스크롤 이벤트 리스너 추가
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+    // imgMove2 애니메이션 제어
+    if (scrollPosition > triggerPosition2) {
+      imgMove2.classList.add('ani-2');
+    } else {
+      imgMove2.classList.remove('ani-2');
+    }
+
+    // imgMove3 애니메이션 제어
+    if (scrollPosition > triggerPosition2) {
+      imgMove3.classList.add('ani-3');
+    } else {
+      imgMove3.classList.remove('ani-3');
+    }
+  });
+});
 
 
 </script>
