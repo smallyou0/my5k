@@ -22,10 +22,8 @@
             <source src="../img/about/1. about.mp4" type="video/mp4"></video>
     </article>
     <article class="brave" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500"> 
-        <!-- <p> -->
-            <img src="../img/about/banner_txt.svg" alt="">
-            <button class="btn-main mt230" type="button">5km 함께 걷기</button>
-        <!-- </p> -->
+        <img src="../img/about/banner_txt.svg" alt="">
+        <button class="btn-main mt230" type="button" onclick="alert('준비중입니다')">5km 함께 걷기</button>
     </article>
     <div class="wrap relative">
         <div class="m0auto space max-width">
@@ -38,22 +36,22 @@
             </div>
             <div class="atc-con-list">
                 <div class="who">
-                        <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
-                            <p>5K 운동의 시작</p>
-                            <p class="counter1"><span>SINCE</span><code>2012</code></p>
-                        </div>
-                        <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
-                            <p>국내 자원팀</p>
-                            <p class="counter1"><code>1102</code><span>팀</span></p>
-                        </div>
-                        <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
-                            <p>대한민국 전국에서 5K 활동</p>
-                            <p>8도 77개 <span>도시</span></p>
-                        </div>
-                        <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
-                            <p>전세계 참여국</p>
-                            <p class="counter1"><code>180</code><span>개국</span></p>
-                        </div>
+                    <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
+                        <p>5K 운동의 시작</p>
+                        <p class="counter1"><span>SINCE</span><code>2012</code></p>
+                    </div>
+                    <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
+                        <p>국내 자원팀</p>
+                        <p class="counter1"><code>1102</code><span>팀</span></p>
+                    </div>
+                    <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
+                        <p>대한민국 전국에서 5K 활동</p>
+                        <p>8도 77개 <span>도시</span></p>
+                    </div>
+                    <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
+                        <p>전세계 참여국</p>
+                        <p class="counter1"><code>180</code><span>개국</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,11 +124,56 @@
             <div class="font-title text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">우리는<br>함께 걷습니다.</div>
             <div class="atc-con font-sub text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">우리의 따뜻한 발걸음은 해마다 더 많은 사람이, <br>더 많은 나라에서 함께하고 있습니다.</div>
             <div class="atc-con aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
-                <p class="text-left w100 text2">함께 걸어요 My5K 참가자는 해마다 증가해서 올해는 전세계 20,000명을 향해 가고 있습니다 <br>
-                    해외 캠페인은 한달 간 원하는 지역에서 자신의 주변 5km를 걷는 캠페인으로 진행되고 있습니다.</p>
+                <p class="text-left w100 text2">
+                    함께 걸어요 My5K 참가자는 해마다 증가해서 올해는 전세계 20,000명을 향해 가고 있습니다 <br>
+                    해외 캠페인은 한달 간 원하는 지역에서 자신의 주변 5km를 걷는 캠페인으로 진행되고 있습니다.
+                </p>
             </div>
             <div class="atc-con aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
                 <img class="w100" src="../img/main/img_graph.png" alt="">
+                <style> 
+                    .line {
+                        fill: none;
+                        stroke: #0074d9;
+                        stroke-width: 2;
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 1000;
+                        animation: dash 5s linear forwards;
+                    }
+
+                    /* 라인 애니메이션 */
+                    @keyframes dash {
+                        to {
+                            stroke-dashoffset: 0;
+                        }
+                    }
+                </style>
+                <!-- <svg width="500" height="300" viewBox="0 0 500 300">
+                    <polyline class="line" points="50,250 150,100 250,150 350,50 450,200" />
+                </svg> -->
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="956.000000pt" height="411.000000pt" viewBox="0 0 956.000000 411.000000"
+                preserveAspectRatio="xMidYMid meet">
+            
+                <g transform="translate(0.000000,411.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                    <path d="M8380 3156 l-1155 -941 -1209 -669 -1209 -669 -1171 -422 -1171 -423
+                    -975 18 c-536 10 -1089 21 -1227 24 -207 5 -253 4 -253 -7 0 -16 60 -18 1525
+                    -43 l950 -16 1162 420 c639 231 1175 428 1192 437 17 8 566 312 1219 673
+                    l1187 658 1140 928 c627 510 1147 934 1155 942 9 9 11 17 5 23 -6 5 -467 -364
+                    -1165 -933z"/>
+                </g>
+            </svg>
+
+
+            <script>
+                // SVG 요소에서 path 데이터 추출하기
+                const path = document.querySelector('path');
+                const pathData = path.getAttribute('d');
+                
+                // 추출한 path 데이터 출력하기
+                console.log('Path Data:', pathData);
+            </script>
             </div>
         </div>
         <div class="map" data-aos="fade-in" data-aos-duration="1200" >
@@ -157,67 +200,66 @@
                 <div class="leaflet" data-aos="fade-in" data-aos-duration="1200">
                     <div class="spot"><img src="../img/main/img_spot.png" alt=""></div>
                     <div class="post-it">
-                        <div class="text1">장소</div>
-                        <div class="align both mb10">
-                            <div class="text2 highlight text-center"><span>(출발지)</span>서울 시청 앞</div>
-                            <img src="../img/main/ico_line_connect.svg" alt="">
-                            <div class="text2 highlight text-center"><span>(도착지)</span>효창운동장</div>
+                        <img class="bg" src="../img/main/img_postit.png" alt="">
+                        <div class="inner">
+                            <div class="text1">장소</div>
+                            <div class="align both mb10">
+                                <div class="text2 highlight text-center"><span>(출발지)</span>서울 시청 앞</div>
+                                <img src="../img/main/ico_line_connect.svg" alt="">
+                                <div class="text2 highlight text-center"><span>(도착지)</span>효창운동장</div>
+                            </div>
+                            <div class="text2 highlight mb10 inline"><span>(해외)</span>전세계 243개국 대상</div>
+                            <ul class="highlight pd20 mt10">
+                                <li class="align">
+                                    <div class="text1">일   시</div>
+                                    <div class="text3 ml30">2024년 10월 9일 수요일  8시 ~ 12시 </div>
+                                </li>
+                                <li class="align">
+                                    <div class="text1">참가비</div>
+                                    <div class="text3 ml30">30,000원 / 전액 이웃돕기에 사용 예정</div>
+                                </li>
+                                <li class="align">
+                                    <div class="text1">주   최</div>
+                                    <div class="text3 ml30">(사)NCMN</div>
+                                </li>
+                                <li class="align">
+                                    <div class="text1">주   관</div>
+                                    <div class="text3 ml30">My5K</div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="text2 highlight mb10 inline"><span>(해외)</span>전세계 243개국 대상</div>
-                        <ul class="highlight pd20 mt10">
-                            <li class="align">
-                                <div class="text1">일   시</div>
-                                <div class="text3 ml30">2024년 10월 9일 수요일  8시 ~ 12시 </div>
-                            </li>
-                            <li class="align">
-                                <div class="text1">참가비</div>
-                                <div class="text3 ml30">30,000원 / 전액 이웃돕기에 사용 예정</div>
-                            </li>
-                            <li class="align">
-                                <div class="text1">주   최</div>
-                                <div class="text3 ml30">(사)NCMN</div>
-                            </li>
-                            <li class="align">
-                                <div class="text1">주   관</div>
-                                <div class="text3 ml30">My5K</div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <figure class="about-v" data-aos="fade-up" data-aos-duration="1200" >
-            <video width="100%" height='560' src="../img/about/about-world.mp4" autoplay></video>
-        </figure> -->
         <div class="m0auto space2 max-width pt100">
             <img class="w100" src="../img/main/img_cycle.png" alt="">
         </div>
         <div class="bg-f8 pt400 banner-wrap">
-            <a href="#none"><img class="w100" src="../img/main/banner_main2.png" alt=""></a>
-        
+            <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="../img/main/banner_main2.png" alt=""></a>
         </div>
-        <script>
-            AOS.init();
-        </script>
     </div>
     <button id="goTopBtn" class="go-top-btn" type="button"></button>
 </body>
 </html>
 <script>
-    let pos2 = {y:0,y2:0,status:true},tops = 0;
-    const elGif = document.querySelector('.ico-heart');
-            window.addEventListener('scroll',function(){
-                // console.log(console); 
-            pos2.y = window.pageYOffset;
+    AOS.init();
+</script>
+<script>
+let pos2 = {y:0,y2:0,status:true},tops = 0;
+const elGif = document.querySelector('.ico-heart');
+        window.addEventListener('scroll',function(){
+            // console.log(console); 
+        pos2.y = window.pageYOffset;
 
-            pos2.status = (pos2.y > pos2.y2) ? true : false;
-            pos2.y2 = pos.y;
-        
-            if(pos2.status){ 
-                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
-            }
-            else{ 
-                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
-            }
-        })
+        pos2.status = (pos2.y > pos2.y2) ? true : false;
+        pos2.y2 = pos.y;
+    
+        if(pos2.status){ 
+            elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+        }
+        else{ 
+            elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+        }
+    })
 </script>

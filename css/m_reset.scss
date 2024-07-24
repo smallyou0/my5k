@@ -1,17 +1,3 @@
-// @media (max-width:1280px) {
-//   header {
-//     .nav-b {
-//       width: 100%;
-//       ul {
-//         .list {
-//           padding:0 2vw;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 @media screen and (max-width: 1200px) {
   @import "_mixin";
   
@@ -28,14 +14,18 @@
       background: url(../img/main/img_postit2.png);
       padding: 40px;
       margin-top: 50px;
+      .inner {
+        padding: 0;
+      }
+      .bg { 
+        display: none;
+      }
     }
   }
   footer {
     position: relative;
-    margin-top: 120px;
+    margin-top: 0;
     width: 100%;
-    background-color: #F60035;
-    background-color: #F60035;
     .inner {
       padding: 40px 16px;
       .ft1 {
@@ -96,61 +86,9 @@
       font-size: 13px;
     } 
 
-    .ft-list {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-      flex : block;
-
-      >li {
-        padding-right: 10px;
-        @include font(400, 16px);
-        line-height: 1.5;
-        margin: 0;
-      }
-      .ft-arrow::after {
-        content: 'arrow_outward';
-        font-family: 'Material Symbols Outlined';
-        vertical-align: middle;
-        font-size: 18px;
-        margin-left: 5px;
-      }
-    }
-
-
-    .ft-logo {
-      // width: $wid;
-      margin: 0 auto;
-
-      >svg {
-        width: 80%;
-        padding: 120px 0 20px 0;
-      }
-    }
-
-    .ft-last {
-      // width: $wid;
-      margin: 0px auto;
-    }
-
-    .ft-sns {
-      @include flex(space-between, center) {}
-
-      ;
-      // width: $wid;
-      margin: 10px auto;
-
-      >ul {
-        @include flex(space-between, center) {
-          gap: 30px
-        }
-
-        ;
-
-      }
-    }
   }
+  .img-move2 .img-move { display: none;}
+.move-wrap .img-move3 { display: none; }
 
 } /*1200 end*/
 
@@ -178,6 +116,8 @@
         >a {
             @include font(600, 25px);
             color: white;
+            font-size: 20px;
+            padding: 8px 10px !important;
         }
 
         >div {
@@ -257,11 +197,10 @@
     width: 150%;
   }
 }
-.img-move2 .img-move { display: none;}
+
 .img-move2 { padding-top: 0; }
 .img-move2>figure>img { width: 150%; }
 .img-move3>figure>img { width: 150%; }
-.move-wrap .img-move3 { display: none; }
 .banner-main { 
   margin-top: -30px;
 }
@@ -293,7 +232,6 @@
   height: 400px;
 }
 .leaflet { 
-  // grid-template-columns: 1fr;
   display: block;
   padding-bottom: 40px;
   

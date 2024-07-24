@@ -599,14 +599,23 @@ body {position: relative;}
     }
     .post-it {
         position: relative;
-        height: 520px;
-        background:  url(../img/main/img_postit.png) no-repeat 0 0 / contain;
-        padding: 40px 38px 68px 86px;
+        // height: 520px;
+        // background:  url(../img/main/img_postit.png) no-repeat 0 0 / 560px;
+        .bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+        }
         &::before {
             position: absolute;
         }
         &::after {
             position: absolute;
+        }
+        .inner {
+            padding: 40px 38px 68px 86px;
         }
     }
     .text1 {

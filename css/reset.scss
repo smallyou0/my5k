@@ -51,6 +51,7 @@ figure {
 }
 button { 
     border: 0;
+    cursor: pointer;
 }
 
 $wid : 1280px;
@@ -77,9 +78,7 @@ header {
 
     .nav-b {
         width: 100%;
-        max-width: $wid;
-
-        @include flex(space-between, flex-start) {}
+        @include flex(flex-start, flex-start) {}
         align-items: center;
         margin: 0 auto;
         padding: 12px 16px;
@@ -91,6 +90,7 @@ header {
             @include font(600, 25px);
             color: white;
             &.logo {
+                display: block;
                 border: 1px solid #fff;
                 padding: 10px 16px;
                 border-radius: 50px;
@@ -105,7 +105,7 @@ header {
         >ul {
             @include flex(space-between, flex-start) {}
             padding: 0;
-            margin-left: -100px;
+            margin-left: 20%;
 
             .list {
                 width: 160px;
