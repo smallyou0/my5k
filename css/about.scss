@@ -216,14 +216,14 @@ body {position: relative;}
         width: 192px;
         position: absolute;
         top: -100px;
-        right: 0;
+        right: 12%;
         transform: scaleX(-1);
     }
     .img-move3 {
         width: 169px;
         position: absolute;
         top: 0;
-        right: 30%;
+        right: 34%;
     }
 }
 .img-move2{
@@ -595,10 +595,18 @@ body {position: relative;}
         }
     }
     .spot {
-        // width: 100%;
-        img { 
+        position: relative;
+        .img-map { 
             display: block;
             width: 100%;
+        }
+        .img-move {
+            width: 180px;
+            margin-top: 12%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
     }
