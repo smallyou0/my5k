@@ -252,6 +252,11 @@
 .who .who-list p span { 
   font-size: 16px;
 }
+.img-move {
+  img { 
+    width: 150%;
+  }
+}
 .img-move2 .img-move { display: none;}
 .img-move2 { padding-top: 0; }
 .img-move2>figure>img { width: 150%; }
