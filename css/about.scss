@@ -185,6 +185,8 @@ body {position: relative;}
             color: #F60035;
             >code {
                 font-family: inherit;
+                animation-duration: 1s;
+                animation-delay: 0s;
             }
         }
     }
@@ -246,10 +248,13 @@ body {position: relative;}
          }
          
          @keyframes ani-2{
-             0%{transform: translateX(10%);} 
+             0%{transform: translateX(30%);} 
              100%{transform: translateX(-100%) ;}
           }
      }
+}
+.no-animation {
+    animation: none;
 }
 .img-move3{
     overflow-x: hidden;
@@ -651,7 +656,11 @@ body {position: relative;}
     }
 }
 .btn-main {
-    width: 100%;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px) ;
     max-width: 740px;
     padding: 0 30px;
     height: 80px;
@@ -662,6 +671,13 @@ body {position: relative;}
     text-align: center;
     font-size: 28px;
     font-weight: 800;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.active { 
+        display: block;
+        opacity: 1;
+    }
 }
 .go-top-btn { 
     width: 60px;

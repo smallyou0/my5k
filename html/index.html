@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/m_reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- jQuery 라이브러리 로드 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- CounterUp 플러그인 로드 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+    <!-- <script src="../js/counter.min.js"></script> -->
+
+        <!-- jQuery 라이브러리 로드 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- jQuery UI 라이브러리 로드 (필요할 경우) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <!-- Waypoints 플러그인 로드 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <!-- CounterUp 플러그인 로드 -->
+        <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="../js/counter.min.js"></script>
     <script src="../js/about.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -23,7 +39,7 @@
     </article>
     <article class="brave" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500"> 
         <img src="../img/about/banner_txt.svg" alt="">
-        <button class="btn-main mt230" type="button" onclick="alert('준비중입니다')">5km 함께 걷기</button>
+        
     </article>
     <div class="wrap relative">
         <div class="m0auto space max-width">
@@ -36,13 +52,13 @@
             </div>
             <div class="atc-con-list">
                 <div class="who">
-                    <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="who-list" data-aos="fade-up" data-aos-duration="1500">
                         <p>5K 운동의 시작</p>
-                        <p class="counter1"><span>SINCE</span><code>2012</code></p>
+                        <p class="counter1"><span>SINCE</span><code class="counter1">2012</code></p>
                     </div>
                     <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
                         <p>국내 자원팀</p>
-                        <p class="counter1"><code>1102</code><span>팀</span></p>
+                        <p class="counter1"><code class="counter2">1102</code><span>팀</span></p>
                     </div>
                     <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
                         <p>대한민국 전국에서 5K 활동</p>
@@ -50,7 +66,7 @@
                     </div>
                     <div class="who-list" data-aos="fade-up" data-aos-duration="1200">
                         <p>전세계 참여국</p>
-                        <p class="counter1"><code>180</code><span>개국</span></p>
+                        <p class="counter1"><code class="counter3">180</code><span>개국</span></p>
                     </div>
                 </div>
             </div>
@@ -79,7 +95,7 @@
         </div>
         <div class="m0auto space max-width">
             <div class="atc-con font-sub" data-aos="fade-up" data-aos-duration="1200">
-                <p class="text3">세상을 따뜻하게 만드는 가장 쉽고도 놀라운 방법, 내주변 5KM에 있습니다.</p> </div>
+                <p class="text3">세상을 따뜻하게 만드는 가장 쉽고도 놀라운 방법,<br> 내주변 5KM에 있습니다.</p> </div>
             <div class="atc-con" data-aos="fade-up" data-aos-duration="1200">
                 <p class="text2">5K운동은 “내 주변 5km”를 돌보아서 세상을 아름답게 만들자는 취지의 운동입니다 <br>
                 전국의 1102개의 팀이 매주 자신의 5km를 구제/교육/의료/위생 등으로 돌아보고 있습니다. ​ My5K는 5km를 걸으며, 내 주변 5Km를 돌아보자는 메시지를 함께 전합니다.</p>
@@ -151,7 +167,7 @@
                 <!-- <svg width="500" height="300" viewBox="0 0 500 300">
                     <polyline class="line" points="50,250 150,100 250,150 350,50 450,200" />
                 </svg> -->
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="956.000000pt" height="411.000000pt" viewBox="0 0 956.000000 411.000000"
                 preserveAspectRatio="xMidYMid meet">
             
@@ -163,7 +179,7 @@
                     l1187 658 1140 928 c627 510 1147 934 1155 942 9 9 11 17 5 23 -6 5 -467 -364
                     -1165 -933z"/>
                 </g>
-            </svg>
+            </svg> -->
 
 
             <script>
@@ -232,18 +248,22 @@
                 </div>
             </div>
         </div>
-        <div class="m0auto space2 max-width pt100">
-            <img class="w100" src="../img/main/img_cycle.png" alt="">
-        </div>
-        <div class="bg-f8 pt400 banner-wrap">
-            <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="../img/main/banner_main2.png" alt=""></a>
+        <div id="cycle">
+            <div class="m0auto space2 max-width pt100">
+                <img class="w100" src="../img/main/img_cycle.png" alt="">
+            </div>
+            <div class="bg-f8 banner-wrap">
+                <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="../img/main/banner_main2.png" alt=""></a>
+            </div>
         </div>
     </div>
     <button id="goTopBtn" class="go-top-btn" type="button"></button>
+    <button class="btn-main mt230" type="button" onclick="alert('준비중입니다')">5km 함께 걷기</button>
 </body>
 </html>
 <script>
-    AOS.init();
+    // AOS.init();
+    
 </script>
 <script>
 let pos2 = {y:0,y2:0,status:true},tops = 0;
@@ -262,4 +282,83 @@ const elGif = document.querySelector('.ico-heart');
             elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
         }
     })
+
+
+
+
+        // 버튼 클릭 시 스크롤을 최상단으로 이동
+        button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });    
+</script>
+<script>
+
+         // 버튼 요소와 요소 가져오기
+         const button = document.querySelector('.btn-main');
+        const cycleElement = document.getElementById('cycle');
+
+        // 스크롤 이벤트 리스너 추가
+        window.addEventListener('scroll', () => {
+            const cycleTop = cycleElement.getBoundingClientRect().top + window.scrollY;
+            const viewportWidth = window.innerWidth;
+
+            if (window.scrollY > 100) {
+                button.style.display = 'block'; // 버튼 보이기
+                button.style.opacity = 1; // 투명도 설정
+            } else {
+                button.style.opacity = 0; // 투명도 설정
+                setTimeout(() => {
+                    if (window.scrollY <= 100) {
+                        button.style.display = 'none'; // 버튼 숨기기
+                    }
+                }, 300); // 투명도 애니메이션 시간과 동일
+            }
+            
+            // 버튼이 사이클 요소에 의해 숨겨지는 조건
+            if (window.scrollY > cycleTop + 200) {
+                button.style.opacity = 0; 
+            }
+
+            if (viewportWidth <= 720) {
+                // 720px 이하에서 사이클 요소에 의해 버튼이 숨겨지는 조건을 수정
+                // const cycleOffset = 100; // 720px 이하에서 사용할 값
+                if (window.scrollY > cycleTop - 500) {
+                    button.style.opacity = 0;
+                }
+            } else if (viewportWidth <= 500) { 
+                if (window.scrollY > cycleTop - 1000) {
+                    button.style.opacity = 0;
+                }
+            }
+        });
+
+    // 애니메이션을 제어할 요소 선택
+    const imgMove2 = document.querySelector('.img-move2 > figure > img');
+    const imgMove3 = document.querySelector('.img-move3 > figure > img');
+
+    // 스크롤 이벤트 리스너 추가
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const triggerPosition2 = 300; // 애니메이션을 시작할 스크롤 위치 (예시로 300px 설정)
+        const triggerPosition3 = 600; // 다른 애니메이션을 시작할 스크롤 위치 (예시로 600px 설정)
+
+        // imgMove2 애니메이션 제어
+        if (scrollPosition > triggerPosition2) {
+            imgMove2.classList.remove('no-animation');
+        } else {
+            imgMove2.classList.add('no-animation');
+        }
+
+        // imgMove3 애니메이션 제어
+        if (scrollPosition > triggerPosition3) {
+            imgMove3.classList.remove('no-animation');
+        } else {
+            imgMove3.classList.add('no-animation');
+        }
+    });
+
+
 </script>
