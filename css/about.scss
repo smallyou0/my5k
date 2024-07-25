@@ -79,7 +79,11 @@ body, html{
 a {text-decoration: none; color:#000;}
 *{box-sizing: border-box}
 
-body {position: relative;}
+body {
+    position: relative; 
+    overflow-x: hidden;
+
+}
 .w100 { width: 100%; }
 .wrap {
     width: 100%;
@@ -95,6 +99,7 @@ body {position: relative;}
 }
 .m-video {
     width: 100%;
+    height: 100vh;
     position: absolute;
     z-index: -1;
     > video {
@@ -104,6 +109,52 @@ body {position: relative;}
       left: 0;
       top: 0;
     }
+    > iframe { 
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        // border: none;
+        // z-index: 100;
+        // margin-top: -80px;
+
+    }
+    &::after {
+        // content: "";
+        // display: block;
+        // position: absolute;
+        // z-index: 300;
+        // left: 0;
+        // bottom: 80px;
+        // width: 100%;
+        // height: 82px;
+        // background: #fff;
+        // opacity: .5;
+    }
+}
+
+.video-wrap { 
+    display: block;
+    width: 100%;
+    height: 100vh;
+    // margin: 0 auto;
+    overflow: hidden;
+}
+.youtubeWrap {
+    z-index:1; 
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 2000px; 
+    // height:1070.230412px; 
+    margin-top:-85.115206px; 
+    overflow: hidden;
+    height: calc(100vh + 80px);
+    // margin-left: -120px;
+    // margin: -85.115206px auto 0 auto;
+    overflow: hidden;
 }
 
 .brave {
@@ -113,7 +164,10 @@ body {position: relative;}
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    img {
+        display: block;
+        margin-top: -50px;
+    }
 }
 .title {
     width: $wid;
