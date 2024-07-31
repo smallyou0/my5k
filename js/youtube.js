@@ -44,7 +44,6 @@
 						'onReady': youtube.onPlayerReady
 					}
 				});
-				
 			}
 			
 			t=0;
@@ -82,7 +81,7 @@
 		winW = $(window).innerWidth();
 		
 		if( winW >= 1920 ){
-			winW=1920;
+			// winW=1920;
 		}
 		else{
 			// winW = $(window).innerWidth(); //1903미만일때는 반응형 창너비로 해라
