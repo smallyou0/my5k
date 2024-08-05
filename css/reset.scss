@@ -91,7 +91,6 @@ header {
             color: white;
             &.logo {
                 display: block;
-                border: 1px solid #fff;
                 padding: 10px 16px;
                 border-radius: 50px;
             }
@@ -128,7 +127,7 @@ header {
         }
     }
 }
-.list3{
+.list3 {
     @include flex(space-between, flex-start) {
         flex-direction: column
     }
@@ -142,29 +141,22 @@ header {
             align-items: center;
             @include font(500, 13px);
         }
-
         >a {
             @include font(400, 12px);
             color: white;
             padding-top: 10px;
-
         }
     }
 }
 
-
-
 header.active {
     background-color: #F60035;
 }
-
-
 .burger {
     transition: .5s;
     transform: translateX(110%);
     z-index: 999;
 }
-
 .burger.active {
     width: 100%;
     height: 100vh;
