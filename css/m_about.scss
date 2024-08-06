@@ -5,6 +5,11 @@
     .barve {
         img { width: 100px !important; }
     }
-
+    .nav-b {
+        
+        > div {
+            display: none;
+        }
+    }
 
 }

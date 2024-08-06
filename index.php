@@ -28,7 +28,7 @@
 <body>
     <article class="m-video">
             <video width="100%" autoplay muted loop poster="./image/04.jpg">
-                <source src="./img/main/main1.mp4" type="video/mp4">
+                <source src="../img/main/main1.mp4" type="video/mp4">
             </video>
     </article>
     
@@ -101,8 +101,8 @@
                         <div>
                             <span>
                                 본 행사는 단체 출발하는 행사로 2개 차로를 확보하여 함께 걷는 행사입니다.<br>
-                                서울시청광장 출발 시간인 9:00 이후 개별 출발이 불가하오니, 시간 숙지하여<br>
-                                출발할 수 있도록 준비해 주세요. 
+                                서울시청광장 출발 시간인 9:00 이후 개별 출발이 불가하오니, <br>
+                                시간 숙지하여 출발할 수 있도록 준비해 주세요. 
                             </span>
                         </div>
                     </div>
@@ -237,10 +237,13 @@
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program01.png" alt="">
                     <div class="desc">
-                        <div class="label">나눔 체험 부스존</div>
+                        <div class="label">나눔 체험 zone</div>
                         <div class="list-program__title">즐거운 5K운동</div>
                         <div class="list-program__desc">
-                            참가자들이 다양한 게임 활동을 통해 My5K의 의미를 즐겁게 체험할<br> 수 있는 특별한 공간입니다. 모든 활동은 쉽게 참여할 수 있도록 마련되어 있으며, 활동 이후에는 선물도 받아 가실 수 있습니다. 나누는 즐거움을 알아가며, My5K의 가치를 느껴보세요!
+                            참가자들이 다양한 게임 활동을 통해 My5K의 의미를 즐겁게 체험<br>
+                            할 수 있는 특별한 공간입니다. 모든 활동은 쉽게 참여할 수 있도록 <br>
+                            마련되어 있으며, 활동 이후에는 선물도 받아 가실 수 있습니다. <br>
+                            나누는 즐거움을 알아가며, My5K의 가치를 느껴보세요!
                         </div>
                         <div class="list-program__caution">
                             ※ 입장 팔찌가 필요한 공간입니다. 각자 받으신 팔찌의 색상에 맞춰서 <br>사랑/동행/변화/기적의 zone으로 이동하셔서 참여해 주세요.
@@ -250,23 +253,27 @@
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program02.png" alt="">
                     <div class="desc">
-                        <div class="label">에어바운스 존_어린이 전용</div>
+                        <div class="label">에어바운스 zone_어린이 전용</div>
                         <div class="list-program__title">My5K는 즐겁다!</div>
                         <div class="list-program__desc">
-                            아이들이 두 개의 대규모 에어바운스 시설(각각 42m x 8m)에서 <br>신나게 뛰어놀 수 있는 특별한 공간입니다. 나눔을 통해 이웃사랑을 실천하는 My5K는 언제나 즐겁습니다.
+                            아이들이 두 개의 대규모 에어바운스 시설(각각 42m x 8m)에서<br>
+                            신나게 뛰어놀 수 있는 특별한 공간입니다. 나눔을 통해 이웃사랑을<br>
+                            실천하는 My5K는 언제나 즐겁습니다.
                         </div>
                         <div class="list-program__caution">
-                            ※ 안전을 위해 미취학 아동과 아동용이 구분되어 있습니다.<br>입장 전 반드시 확인 부탁드립니다.
+                            ※ 안전을 위해 미취학 아동용과 아동용이 구분되어 있습니다.<br>
+                            입장 전 반드시 확인 부탁드립니다.
                         </div>
                     </div>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program03.png" alt="">
                     <div class="desc">
-                        <div class="label">푸드존</div>
+                        <div class="label">푸드 zone</div>
                         <div class="list-program__title">맛있는 쉼터</div>
                         <div class="list-program__desc">
-                            참가자들이 My5K의 기쁨을 나눌 수 있도록, 간단하고 맛있는 음식을 제공합니다. 다양한 프로그램 참여에 앞서, 간식으로 든든히 몸과 마음을 채워보세요! 걷기 이후 참가자들의 건강을 위한 간식을 준비했습니다. My5K의 따뜻한 마음을 느끼며 즐거운 시간 보내세요!
+                            참가자들이 My5K의 기쁨을 나눌 수 있도록, 간단하고 맛있는 음식을<br> 
+                            제공합니다. 다양한 프로그램 참여에 앞서, 간식으로 든든히 몸과 마음을 채워 보세요! 걷기 이후 참가자들의 건강을 위한 간식을 준비했습니다. My5K의 따뜻한 마음을 느끼며 즐거운 시간 보내세요!
                         </div>
                         <div class="list-program__caution">
                             ※  제공 간식은 진행 상황에 따라 변경될 수 있으니, 참고해 주세요.
@@ -276,30 +283,30 @@
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program04.png" alt="">
                     <div class="desc">
-                        <div class="label">기부대상 선정 존</div>
+                        <div class="label">기부대상 선정 zone</div>
                         <div class="list-program__title">기적의 손길</div>
                         <div class="list-program__desc">
-                            올해는 참가비 전액 기부의 수혜자를 참가들과 함께 정합니다. 행사장 내 위치한 기부 대상 선정 존에서 여러분의 소중한 의견으로 변화를 만들어주세요. 참가자들의 따뜻한 마음을 모아 기부 대상을 선정하고 My5K의 특별한 나눔을 실천해 보세요!
+                            올해는 기부의 수혜자를 참가들과 함께 정합니다. 행사장 내 위치한 기부 대상 선정 zone에서 여러분의 소중한 의견으로 변화를 만들어주세요. 참가자들의 따뜻한 마음을 모아 기부 대상을 선정하고 My5K의 특별한 나눔을 실천해 보세요!
                         </div>
                     </div>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program05.png" alt="">
                     <div class="desc">
-                        <div class="label">기업활동부스존</div>
+                        <div class="label">기업활동부스 zone</div>
                         <div class="list-program__title">나눔의 파트너</div>
                         <div class="list-program__desc">
-                            My5K의 사랑, 동행, 변화, 기적에 동참하는 기업들이 준비한 특별한  공간입니다. 각 기업은 우리의 선한 가치를 지지하며, 다양한 활동과  푸짐한 선물을 통해 참가자들과 함께하고자 합니다. 기적의 파트너와 함께 만들어가는 기적을 경험해 보세요!
+                            My5K의 사랑, 동행, 변화, 기적에 동참하는 기업들이 준비한 특별한 <br>공간입니다. 각 기업은 우리의 선한 가치를 지지하며, 다양한 활동과 <br>푸짐한 선물을 통해 참가자들과 함께하고자 합니다. 기적의 파트너와<br> 함께 만들어가는 기적을 경험해 보세요!
                         </div>
                     </div>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1200">
                     <img src="./img/img_program06.png" alt="">
                     <div class="desc">
-                        <div class="label">포토존</div>
+                        <div class="label">포토 zone</div>
                         <div class="list-program__title">기쁨의 순간</div>
                         <div class="list-program__desc">
-                            행사장에 마련된 포토존에서 My5K의 즐거운 순간을 사진과 영상으로 남기고 소중한 추억을 만들어보세요. 아름답게 꾸며진 이 공간에서 친구와 가족과 함께 행복한 시간을 보낼 수 있습니다. 기쁨의 순간에서 특별한 기억을 오래도록 간직해 보세요!
+                            행사장에 마련된 포토존에서 My5K의 즐거운 순간을 사진과 영상으로 남기고 소중한 추억을 만들어 보세요. 아름답게 꾸며진 이 공간에서<br> 친구와 가족과 함께 행복한 시간을 보낼 수 있습니다. 기쁨의 순간에서<br> 특별한 기억을 오래도록 간직해 보세요!
                         </div>
                     </div>
                 </li>
@@ -393,8 +400,8 @@
         </div>
         <div class="img-move pt66">
             <figure>
-                <img src="./img/banner02.png" alt="">
-                <img src="./img/banner02.png" alt="">
+                <img src="../img/banner02.png" alt="">
+                <img src="../img/banner02.png" alt="">
             </figure>
         </div>
         <div class="m0auto space max-width">
@@ -408,7 +415,7 @@
                 </p>
             </div>
             <div class="atc-con aos-init aos-animate mt50" data-aos="fade-up" data-aos-duration="1200">
-                <img class="w100" src="./img/main/img_graph.png" alt="">
+                <img class="w100" src="../img/main/img_graph.png" alt="">
             </div>
         </div>
         <div class="map" data-aos="fade-in" data-aos-duration="1200" >
@@ -416,12 +423,12 @@
                 <div class="font-title text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">세계의 My5K</div>
                 <div class="atc-con font-sub text1 text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">함께 걸어요 My5K는 전세계 160개국과 함께합니다.</div>
             </div>
-            <!-- <img src="./img/main/img_map.png" alt=""> -->
+            <!-- <img src="../img/main/img_map.png" alt=""> -->
         </div>
         <div class="img-move02 pt66">
             <figure>
-                <img src="./img/banner03.png" alt="">
-                <img src="./img/banner03.png" alt="">
+                <img src="../img/banner03.png" alt="">
+                <img src="../img/banner03.png" alt="">
             </figure>
         </div>
 
@@ -431,7 +438,7 @@
                 <div class="font-title text-left aos-init aos-animate relative" data-aos="fade-up" data-aos-duration="1200">
                     함께 걷는 당신이<br>
                     기적의 주인공입니다.
-                    <img class="gif-move04" src="./img/move04.gif" alt="">
+                    <img class="gif-move04" src="../img/move04.gif" alt="">
                 </div>
                 <div class="atc-con aos-init aos-animate pt40" data-aos="fade-up" data-aos-duration="1200">
                     <p class="text3">
@@ -458,10 +465,10 @@
                     </ul>
                 </div>
             </div>
-            <img class="banner03" src="./img/img_banner03.png" alt="" data-aos="fade-up" data-aos-duration="1200">
+            <img class="banner03" src="../img/img_banner03.png" alt="" data-aos="fade-up" data-aos-duration="1200">
         </div>
         <div class="bg-f8 banner-wrap">
-            <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="./img/main/banner_main2.png" alt=""></a>
+            <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="../img/main/banner_main2.png" alt=""></a>
         </div>
     </div>
     <button id="goTopBtn" class="go-top-btn" type="button"></button>
