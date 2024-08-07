@@ -415,7 +415,6 @@
             </figure>
         </div>
         <div class="m0auto space max-width">
-            
             <div class="font-title text-left aos-init aos-animate pt300 " data-aos="fade-up" data-aos-duration="1200">함께 걷는 동행은 <br>세상을 변화시킵니다.</div>
             <!-- <div class="atc-con font-sub text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"></div> -->
             <div class="atc-con aos-init aos-animate pt40" data-aos="fade-up" data-aos-duration="1200">
@@ -428,7 +427,7 @@
                 <img class="w100" src="./img/main/img_graph.png" alt="">
             </div>
         </div>
-        <div class="map" data-aos="fade-up" data-aos-duration="1200" >
+        <div class="map" data-aos="fade-up" data-aos-duration="1200">
             <!-- <div class="m0auto space max-width pt100">
                 <div class="font-title text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">세계의 My5K</div>
                 <div class="atc-con font-sub text1 text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">함께 걸어요 My5K는 전세계 160개국과 함께합니다.</div>
@@ -441,8 +440,6 @@
                 <img src="./img/banner03.png" alt="">
             </figure>
         </div>
-
-
         <div class="bg-f8 guide" id="cycle">
             <div class="m0auto space max-width pt300">
                 <div class="font-title text-left aos-init aos-animate relative" data-aos="fade-up" data-aos-duration="1200">
