@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* Reset */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+nav,
+section,
+article,
+header,
+footer,
+main,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+body,
+input,
+select,
+textarea,
+button,
+img,
+fieldset {
+  border: none;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+select {
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+}
+select::-ms-expand {
+  display: none; /*for IE10,11*/
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+address,
+cite,
+code,
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+label,
+img,
+input,
+select,
+textarea,
+button,
+a {
+  vertical-align: middle;
+}
+
+u,
+ins,
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+.align {
+  display: flex;
+}
+.align.column {
+  flex-direction: column;
+}
+.align.row {
+  flex-direction: row;
+}
+.align.left {
+  justify-content: flex-start;
+}
+.align.right {
+  justify-content: flex-end;
+}
+.align.center {
+  justify-content: center;
+}
+.align.both {
+  justify-content: space-between;
+}
+.align.triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.align.triple > :nth-child(1) {
+  justify-self: start;
+}
+.align.triple > :nth-child(2) {
+  justify-self: center;
+  white-space: nowrap;
+}
+.align.triple > :nth-child(3) {
+  justify-self: right;
+}
+.align.vt {
+  align-items: flex-start;
+}
+.align.vm {
+  align-items: center;
+}
+.align.vb {
+  align-items: flex-end;
+}
+.gap14 {
+  gap: 14px;
+}
+
+/* Normalize */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="date"] {
+  position: relative;
+  /* width: 100px; */
+}
+
+input[type="date"]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+}
+
+input[type="date"]:valid::before {
+  display: none;
+}
+
+caption,
+legend,
+.a11y-hidden {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media print {
+  .header,
+  .footer,
+  .visual {
+    display: none;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+@page {
+  margin: 1cm 2cm;
+}
+.print {
+  display: block;
+}
+@media screen {
+  .print {
+    display: none;
+  }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리맨 어드민</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/table.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="shadow">
+        <div class="m0auto align both vm px16">
+          <h1 class="header__logo">
+            <a href=""><img src="images/logo.svg" alt="로고" /></a>
+          </h1>
+          <div class="header__btn align">
+            <button class="btn line round ico1" type="button">로그아웃</button>
+            <button class="btn blue round" type="button">모바일웹 가기</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main m0auto">
+      <aside class="sidebar">
+        <ul class="sidebar__list">
+          <li><a class="btn-menu ico1 active" href="index.html">회원관리</a></li>
+          <li><a class="btn-menu ico2" href="member.html">결제 관리</a></li>
+          <!-- <li>
+            <a class="btn-menu ico5" href="#none">문서</a>
+            <ul class="sidebar__sub">
+              <li><a href="doc-weighbridge.html">계근대</a></li>
+              <li><a href="doc-lame.html">앉은뱅이</a></li>
+              <li><a href="doc-transaction-statement.html">거래명세서</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </aside>
+
+      <section class="content">
+        <div class="align both">
+          <div class="heading large">회원 목록</div>
+          <nav>
+            <ul class="tab-type1">
+              <li><button class="active" type="button">7일</button></li>
+              <li><button type="button">14일</button></li>
+              <li><button type="button">30일</button></li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mt28 dashboard">
+          <li>
+            <div class="dashboard__txt">매출금액</div>
+            <div class="dashboard__txt pt24">9,999,999,999원</div>
+          </li>
+          <li>
+            <div class="dashboard__txt">신규 회원</div>
+            <div class="dashboard__txt pt24">9,999,999,999원</div>
+          </li>
+          <li>
+            <div class="dashboard__txt">계량 문서 생성</div>
+            <div class="dashboard__txt pt24">9,999,999,999원</div>
+          </li>
+          <li>
+            <div class="dashboard__txt">광고 신청</div>
+            <div class="dashboard__txt pt24">9,999,999,999원</div>
+          </li>
+        </ul>
+        <div class="align both pt80">
+          <div class="heading large">신규회원</div>
+          <button class="btn small" type="button">더보기</button>
+        </div>
+        <table class="table-type1 mt29 table-sortable">
+          <colgroup>
+            <col style="width: 3rem" />
+            <col />
+            <col />
+            <col />
+            <col style="width: 15.2rem" />
+            <col style="width: 12.3rem" />
+            <col />
+            <col />
+            <col style="width: 15rem" />
+            <col />
+          </colgroup>
+          <thead>
+            <tr>
+              <th><input type="checkbox" name="checkAll" /></th>
+              <th>NO</th>
+              <th>이름</th>
+              <th>업체</th>
+              <th>휴대전화</th>
+              <th>이메일</th>
+              <th>상태</th>
+              <th>구독상품</th>
+              <th>가입날짜</th>
+              <th>관리</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>5</td>
+              <td>홍길동 홍길동 홍길동</td>
+              <td>-</td>
+              <td class="phone"><img src="images/ico_phone_kakao.svg" alt="전화유형" />010-1234-56768</td>
+              <td>example@gmail.com</td>
+              <td>정상</td>
+              <td class="blue">없음</td>
+              <td>2022-01-18 (08:30)</td>
+              <td><a href="#none">수정</a></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>4</td>
+              <td>홍길동</td>
+              <td>성동금속 성동금속</td>
+              <td class="phone"><img src="images/ico_phone_general.svg" alt="전화유형" />010-1234-56768</td>
+              <td>example example@gmail.com</td>
+              <td>정상</td>
+              <td class="blue">없음</td>
+              <td>2022-01-18 (08:30)</td>
+              <td><a href="#none">수정</a></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>3</td>
+              <td>홍길동</td>
+              <td>업체명</td>
+              <td class="phone"><img src="images/ico_phone_general.svg" alt="전화유형" />010-1234-56768</td>
+              <td>example@gmail.com</td>
+              <td>정상</td>
+              <td class="blue">없음</td>
+              <td>2022-01-18 (08:30)</td>
+              <td><a href="#none">수정</a></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>2</td>
+              <td>홍길동</td>
+              <td>업체명</td>
+              <td class="phone"><img src="images/ico_phone_general.svg" alt="전화유형" />010-1234-56768</td>
+              <td>example@gmail.com</td>
+              <td>정상</td>
+              <td class="blue">없음</td>
+              <td>2022-01-18 (08:30)</td>
+              <td><a href="#none">수정</a></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>1</td>
+              <td>홍길동</td>
+              <td>업체명</td>
+              <td class="phone"><img src="images/ico_phone_kakao.svg" alt="전화유형" />010-1234-56768</td>
+              <td>example@gmail.com</td>
+              <td>정상</td>
+              <td class="blue">없음</td>
+              <td>2022-01-18 (08:30)</td>
+              <td><a href="#none">수정</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="align both pt63">
+          <div class="heading large">광고신청</div>
+          <button class="btn small" type="button">더보기</button>
+        </div>
+        <table class="table-type1 mt29 table-sortable">
+          <colgroup>
+            <col style="width: 3rem" />
+            <col style="width: 5rem" />
+            <col style="width: 22rem" />
+            <col />
+            <col />
+            <col style="width: 15rem" />
+            <col />
+          </colgroup>
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>NO</th>
+              <th>제목</th>
+              <th>업체명</th>
+              <th>연락처</th>
+              <th>이메일</th>
+              <th>문의날짜</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>5</td>
+              <td>질문입니다. 질문입니다. 질문입니다.</td>
+              <td>성동금속</td>
+              <td>010-2222-1111</td>
+              <td>example@gmail.com</td>
+              <td>2022-01-18 (08:30)</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>4</td>
+              <td>질문입니다. 질문입니다. 질문입니다. 질문입니다.</td>
+              <td>성동금속 성동금속 성동금속</td>
+              <td>010-2222-1111</td>
+              <td>example@gmail.com</td>
+              <td>2022-01-18 (08:30)</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>4</td>
+              <td>질문입니다. 질문입니다. 질문입니다.</td>
+              <td>성동금속 성동금속 성동금속</td>
+              <td>010-2222-1111</td>
+              <td>example@gmail.com</td>
+              <td>2022-01-18 (08:30)</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>4</td>
+              <td>질문입니다. 질문입니다. 질문입니다.</td>
+              <td>성동금속 성동금속 성동금속</td>
+              <td>010-2222-1111</td>
+              <td>example@gmail.com</td>
+              <td>2022-01-18 (08:30)</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>4</td>
+              <td>질문입니다. 질문입니다. 질문입니다.</td>
+              <td>성동금속 성동금속 성동금속</td>
+              <td>010-2222-1111</td>
+              <td>example@gmail.com</td>
+              <td>2022-01-18 (08:30)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

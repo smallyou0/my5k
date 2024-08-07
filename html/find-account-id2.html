@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My5k</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="input-wrap">
+            <h2>계정 찾기</h2>
+            <ul class="tab-type1 mb32">
+                <li><a href="find-account-id1.html" class="active">아이디 찾기</a></li>
+                <li><a href="find-account-pw1.html">비밀번호 변경</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <label class="label" for="txt1">고객님의 정보와 일치하는 아이디입니다.</label>
+                    <input type="text" value="아이디 호출" id="txt1">
+                </li>
+            </ul>
+            <button class="btn-main2 mt32" type="button" onclick="location.href='login.html'">로그인</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
+    const elGif = document.querySelector('.ico-heart');
+            window.addEventListener('scroll',function(){
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
+
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
+        
+            if(pos2.status){ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+            else{ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+        })
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectAllCheckbox = document.getElementById("checkbox1");
+    const checkboxes = document.querySelectorAll(".checkbox");
+
+    // 체크박스 전체 선택/해제 기능
+    selectAllCheckbox.addEventListener("change", function () {
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    });
+
+    // 각 체크박스 라벨 텍스트 클릭 시 페이지 이동
+    document.querySelectorAll('.checkbox-container label span').forEach(span => {
+        span.addEventListener('click', function(event) {
+            const checkbox = span.parentElement.querySelector('.checkbox');
+            checkbox.checked = !checkbox.checked; // 체크 상태 토글
+            if (span.parentElement.classList.contains('arrow')) {
+                window.location.href = 'index.php'; // 페이지 이동
+            }
+        });
+    });
+  });
+
+  $(document).ready(function() {
+    $('input[type="checkbox"]').change(function() {
+      if ($('#checkbox2').is(':checked') && $('#checkbox3').is(':checked')) {
+        $('#btnNext').addClass('active');
+      } else {
+        $('#btnNext').removeClass('active');
+      }
+    });
+  });
+
+  function isChecked (){
+    if ($('#checkbox2').is(':checked') && $('#checkbox3').is(':checked')) {
+        if($('#checkbox4').is(':checked')){
+          window.location.href= 'phone-verification.php?sms=Y';
+        }else{
+          window.location.href= 'phone-verification.php';
+        }
+        
+      } else {
+        alert('필수항목에 체크해주세요');
+        return false;
+      }
+  }
+
+
+</script>

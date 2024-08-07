@@ -286,7 +286,7 @@
                         <div class="label">기부대상 선정 zone</div>
                         <div class="list-program__title">기적의 손길</div>
                         <div class="list-program__desc">
-                            올해는 기부의 수혜자를 참가들과 함께 정합니다. 행사장 내 위치한 기부 대상 선정 zone에서 여러분의 소중한 의견으로 변화를 만들어주세요. 참가자들의 따뜻한 마음을 모아 기부 대상을 선정하고 My5K의 특별한 나눔을 실천해 보세요!
+                            올해는 기부 수혜자를 참가자들과 함께 정합니다. 행사장 내 위치한 기부 대상 선정 zone에서 여러분의 소중한 의견으로 변화를 만들어 주세요. 참가자들의 따뜻한 마음을 모아 기부 대상을 선정하고 My5K의 특별한 나눔을 실천해 보세요!
                         </div>
                     </div>
                 </li>
@@ -327,7 +327,7 @@
                                 나와 함께 모여서 참가할 때
                             </div> -->
                         </div>
-                        <div class="list-apply__caution pb50">※ 참가 신청 페이지에서 유의사항을 모두 확인하고 결제를 진행해주세요.</div>
+                        <div class="list-apply__caution pb50">※ 참가 신청 페이지에서 유의사항을 모두 확인하고 결제를 진행해 주세요.</div>
                     </div>
                     <button class="btn-apply" type="button">신청하기</button>
                 </li>
@@ -384,7 +384,7 @@
                     </div>
                 </div>
                 <div class="who-list aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
-                    <p class="counter">8<span>도</span> 77개 <span>도시</span></p>
+                    <p class="counter"> <span>전국</span> 8<span>도</span> 77개 <span>도시</span></p>
                     <div class="desc">
                         전국 곳곳 위치한 5K팀은 <br><span>77개 도시에서 활동하고 있습니다.</span>
                     </div>
@@ -411,7 +411,7 @@
             <div class="atc-con aos-init aos-animate pt40" data-aos="fade-up" data-aos-duration="1200">
                 <p class="text3">
                     우리의 따뜻한 발걸음인 5K운동은 해마다 더 많은 나라에서,<br>
-                    더 많은 사람들이 함께하고 있습니다.
+                    더 많은 사람들과 함께하고 있습니다.
                 </p>
             </div>
             <div class="atc-con aos-init aos-animate mt50" data-aos="fade-up" data-aos-duration="1200">
