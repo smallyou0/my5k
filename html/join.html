@@ -18,75 +18,42 @@
 <body>
     
     <div class="wrap">
-        <div class="input-wrap">
+        <div class="join-wrap">
             <h2>회원가입</h2>
             <ul>
                 <li>
-                    <label class="label" for="txt1">아이디</label>
-                    <div class="input-type2">
-                        <input type="text" placeholder="아이디를 입력해주세요." id="txt1">
+                    <label class="label" for="">아이디</label>
+                    <div class="align">
+                        <input type="text" placeholder="아이디를 입력해주세요.">
                         <button class="btn-sub" type="button">중복 확인</button>
                     </div>
                 </li>
                 <li>
-                    <label class="label" for="txt2">비밀번호</label>
-                    <input type="password" placeholder="6~30자 영문, 숫자 조합" id="txt2">
+                    <label class="label" for="">비밀번호</label>
+                    <input type="password" placeholder="6~30자 영문, 숫자 조합">
                 </li>
                 <li class="border-bottom pb32">
-                    <label class="label" for="txt3">비밀번호 확인</label>
-                    <input type="password" placeholder="6~30자 영문, 숫자 조합" id="txt3">
+                    <label class="label" for="">비밀번호 확인</label>
+                    <input type="password" placeholder="6~30자 영문, 숫자 조합">
+                </li>
+                <li class="mt16">
+                    <label class="label" for="">비밀번호 확인</label>
+                    <input type="password" placeholder="6~30자 영문, 숫자 조합">
                 </li>
                 <li>
-                    <label class="label" for="txt4">이름</label>
-                    <input type="text" placeholder="이름을 입력해주세요." id="txt4">
+                    <label class="label" for="">이름</label>
+                    <input type="text" placeholder="이름을 입력해주세요.">
                 </li>
                 <li>
-                    <label class="label" for="txt5">성별</label>
-                    <select name="" id="txt5">
+                    <label class="label" for="">성별</label>
+                    <select name="" id="">
                         <option value="">남성</option>
                         <option value="">여성</option>
                     </select>
                 </li>
                 <li>
-                    <label class="label" for="txt6">이메일</label>
-                    <input type="email" id="txt6">
-                </li>
-                <li>
-                    <label class="label" for="txt7">휴대폰 번호</label>
-                    <input type="tel" id="txt7">
-                </li>
-                <li>
-                    <label class="label" for="txt8">주소</label>
-                    <div class="input-type2">
-                        <input type="text" placeholder="주소를 입력해주세요." id="txt8">
-                        <button class="btn-sub" type="button">중복 확인</button>
-                    </div>
-                    <input class="mt8" type="text" placeholder="상세주소를 입력해주세요.">
-                </li>
-                <li>
-                    <div class="check-menu-box">
-                        <div class="checkbox-container total">
-                          <input type="checkbox" id="checkbox1">
-                          <label for="checkbox1"><span>약관 전체 동의</span></label>
-                        </div>
-                        <div class="checkbox-container terms arrow">
-                          <input type="checkbox" id="checkbox2" class="checkbox">
-                          <label for="checkbox2"></label> <a class="text-type3 black09 " onclick="location.href='privacy-policy.php'">만 14세 이상입니다.(필수)</a>
-                        </div>
-                        <div class="checkbox-container terms arrow">
-                          <input type="checkbox" id="checkbox3" class="checkbox">
-                          <label for="checkbox3"></label> <a class="text-type3 black09 " onclick="location.href='location-information.php'">이용약관 동의(필수)</a>
-                        </div>
-                        <div class="checkbox-container terms arrow">
-                          <input type="checkbox" id="checkbox4" name="sms" class="checkbox" value="Y">
-                          <label for="checkbox4"></label><a class="text-type3 black09 " onclick="location.href='marketing.php'">개인정보 수집 및 이용 동의(필수)</a>
-                        </div>
-                      </div>
-
-                </li>
-                <!-- <li>
-                    <label class="label" for="txt7">국적</label>
-                    <select name="" id="txt7">
+                    <label class="label" for="">국적</label>
+                    <select name="" id="">
                         <option value="">대한민국(Korea)</option>
                         <option value=""></option>
                     </select>
@@ -126,17 +93,17 @@
                         </div>
                     </div>
                    
-                </li> -->
-                <!-- <li class="mt16">
+                </li>
+                <li class="mt16">
                     <label class="label" for="">전화번호</label>
                     <input type="tel" placeholder="휴대폰 번호 ‘-’를 제외하고 입력해주세요.">
                 </li>
                 <li class="border-bottom pb32">
                     <label class="label" for="">이메일</label>
                     <input type="tel" placeholder="이메일을 입력해주세요.">
-                </li> -->
+                </li>
             </ul>
-            <button class="btn-main2 mt32" type="button">가입하기</button>
+            <button class="btn-main" type="button">가입하기</button>
         </div>
     </div>
 </body>
@@ -158,55 +125,4 @@
                 elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
             }
         })
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const selectAllCheckbox = document.getElementById("checkbox1");
-    const checkboxes = document.querySelectorAll(".checkbox");
-
-    // 체크박스 전체 선택/해제 기능
-    selectAllCheckbox.addEventListener("change", function () {
-        checkboxes.forEach((checkbox) => {
-            checkbox.checked = selectAllCheckbox.checked;
-        });
-    });
-
-    // 각 체크박스 라벨 텍스트 클릭 시 페이지 이동
-    document.querySelectorAll('.checkbox-container label span').forEach(span => {
-        span.addEventListener('click', function(event) {
-            const checkbox = span.parentElement.querySelector('.checkbox');
-            checkbox.checked = !checkbox.checked; // 체크 상태 토글
-            if (span.parentElement.classList.contains('arrow')) {
-                window.location.href = 'index.php'; // 페이지 이동
-            }
-        });
-    });
-  });
-
-  $(document).ready(function() {
-    $('input[type="checkbox"]').change(function() {
-      if ($('#checkbox2').is(':checked') && $('#checkbox3').is(':checked')) {
-        $('#btnNext').addClass('active');
-      } else {
-        $('#btnNext').removeClass('active');
-      }
-    });
-  });
-
-  function isChecked (){
-    if ($('#checkbox2').is(':checked') && $('#checkbox3').is(':checked')) {
-        if($('#checkbox4').is(':checked')){
-          window.location.href= 'phone-verification.php?sms=Y';
-        }else{
-          window.location.href= 'phone-verification.php';
-        }
-        
-      } else {
-        alert('필수항목에 체크해주세요');
-        return false;
-      }
-  }
-
-
 </script>

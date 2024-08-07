@@ -130,6 +130,7 @@ a {
 
 button {
   cursor: pointer;
+  background: transparent;
 }
 
 a {

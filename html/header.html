@@ -1,10 +1,10 @@
 <nav class="nav-b">
 
     <!-- <div class="align triple"> -->
-        <a class="logo" href="index.php"><img src="../img/logo.svg" alt=""></a>
+        <a class="logo" href="#none" onclick="home();"><img src="../img/logo.svg" alt=""></a>
         <ul>
-            <li class="list"><a href="#none" onclick="alert('준비중입니다')">2024 My5k</a></li>
-            <li class="list"><a href="#none" onclick="alert('준비중입니다')">유의사항</a></li>
+            <li class="list"><a href="#none" onclick="home();">2024 My5k</a></li>
+            <li class="list"><a href="#none" onclick="notice();">유의사항</a></li>
         </ul>
         <a class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
         <div></div>
@@ -18,58 +18,72 @@
         <a class="close">x</a>
     </div>
     <div class="burger-list">
-        <a href="#none" onclick="alert('준비중입니다')">2024 My5k</a>
-        <a href="#none" onclick="alert('준비중입니다')">유의사항</a>
+        <a href="#none" onclick="home();">2024 My5k</a>
+        <a href="#none" onclick="notice();">유의사항</a>
         <!-- <a href="login.html">로그인</a> -->
     </div>
 </article>
 <script>
     $(document).ready(function() {
-        // 현재 페이지의 URL을 가져옵니다.
-        const currentPage = window.location.pathname;
 
-        // login.html 페이지가 아니라면 스크립트를 실행합니다.
-        if (!currentPage.includes('login.html')) {
-            const elBurger = document.querySelector('.burger-ic');
-            const elBurgers = document.querySelector('.burger');
-            const elClose = document.querySelector('.close');
+        window.onload = function() {
+            // 현재 페이지의 URL을 가져옵니다.
+            const currentPage = window.location.pathname;
 
-            elBurger.onclick = function(){
-                elBurgers.classList.add('active');
-            }
+            // login.html 페이지가 아니라면 스크립트를 실행합니다.
+            if (!currentPage.includes('login.html')) {
+                const elBurger = document.querySelector('.burger-ic');
+                const elBurgers = document.querySelector('.burger');
+                const elClose = document.querySelector('.close');
 
-            elClose.onclick = function(){
-                elBurgers.classList.remove('active');
-            }
-
-            $(".list").on('mouseenter',function(){
-                $(".list3 ").stop().slideDown()
-            })
-
-            $(".list").on('mouseleave',function(){
-                $(".list3").stop().slideUp()
-            })
-
-            let pos = {y:0,y2:0,status:true};
-            const elBg = document.querySelector('header');
-            
-            window.addEventListener('scroll',function(){
-                pos.y = window.pageYOffset;
-
-                pos.status = (pos.y > pos.y2) ? true : false;
-                pos.y2 = pos.y;
-
-                if(pos.status){ 
-                    elBg.classList.add('active')
+                elBurger.onclick = function(){
+                    elBurgers.classList.add('active');
                 }
 
-                if( window.pageYOffset == 0) {
-                    elBg.classList.remove('active')
+                elClose.onclick = function(){
+                    elBurgers.classList.remove('active');
                 }
-            });
-        } else {
-            // login.html 페이지인 경우 header의 배경색을 빨간색으로 설정합니다.
-            $('header').css('background', 'red');
-        }
+
+                $(".list").on('mouseenter',function(){
+                    $(".list3 ").stop().slideDown()
+                })
+
+                $(".list").on('mouseleave',function(){
+                    $(".list3").stop().slideUp()
+                })
+
+                let pos = {y:0,y2:0,status:true};
+                const elBg = document.querySelector('header');
+                
+                window.addEventListener('scroll',function(){
+                    pos.y = window.pageYOffset;
+
+                    pos.status = (pos.y > pos.y2) ? true : false;
+                    pos.y2 = pos.y;
+
+                    if(pos.status){ 
+                        elBg.classList.add('active')
+                    }
+
+                    if( window.pageYOffset == 0) {
+                        elBg.classList.remove('active')
+                    }
+                });
+            } else {
+                // login.html 페이지인 경우 header의 배경색을 빨간색으로 설정합니다.
+                $('header').css('background', 'red');
+            }
+        };
+    
     });
+
+
+function home()
+{
+	location.href="https://my5k.co.kr";
+}
+ 
+function notice(){
+	location.href="https://2024.my5k.co.kr/goods/view?no=80";
+}
 </script>

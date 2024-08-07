@@ -24,8 +24,18 @@
     <!-- <script src="./js/youtube.js"></script> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/my5k_144.svg">
+    <!-- 오픈그래프 -->
+    <meta property="og:url" content="http://www.my5k.co.kr">
+    <meta property="og:title" content="My5k 2024 함께 걸어요 ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/open_graph.png">
+    <meta property="og:description" content="My5k 2024 함께걸어요 홈페이지 입니다.">
 </head>
 <body>
+
     <article class="m-video">
             <video width="100%" autoplay muted loop poster="./image/04.jpg">
                 <source src="./img/main/main1.mp4" type="video/mp4">
@@ -338,7 +348,7 @@
                         </div>
                         <div class="list-apply__caution pb50">※ 참가 신청 페이지에서 유의사항을 모두 확인하고 결제를 진행해 주세요.</div>
                     </div>
-                    <button class="btn-apply" type="button">신청하기</button>
+                    <button class="btn-apply" type="button" onclick="onShop();">신청하기</button>
                 </li>
                 <!-- <li>
                     <div class="bg">
@@ -415,6 +425,7 @@
             </figure>
         </div>
         <div class="m0auto space max-width">
+            
             <div class="font-title text-left aos-init aos-animate pt300 " data-aos="fade-up" data-aos-duration="1200">함께 걷는 동행은 <br>세상을 변화시킵니다.</div>
             <!-- <div class="atc-con font-sub text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"></div> -->
             <div class="atc-con aos-init aos-animate pt40" data-aos="fade-up" data-aos-duration="1200">
@@ -427,7 +438,7 @@
                 <img class="w100" src="./img/main/img_graph.png" alt="">
             </div>
         </div>
-        <div class="map" data-aos="fade-up" data-aos-duration="1200">
+        <div class="map" data-aos="fade-up" data-aos-duration="1200" >
             <!-- <div class="m0auto space max-width pt100">
                 <div class="font-title text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">세계의 My5K</div>
                 <div class="atc-con font-sub text1 text-left aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">함께 걸어요 My5K는 전세계 160개국과 함께합니다.</div>
@@ -440,6 +451,8 @@
                 <img src="./img/banner03.png" alt="">
             </figure>
         </div>
+
+
         <div class="bg-f8 guide" id="cycle">
             <div class="m0auto space max-width pt300">
                 <div class="font-title text-left aos-init aos-animate relative" data-aos="fade-up" data-aos-duration="1200">
@@ -475,11 +488,11 @@
             <img class="banner03" src="./img/img_banner03.png" alt="" data-aos="fade-up" data-aos-duration="1200">
         </div>
         <div class="bg-f8 banner-wrap">
-            <a href="#none" onclick="alert('준비중입니다')"><img class="w100" src="./img/main/banner_main2.png" alt=""></a>
+            <a href="https://2024.my5k.co.kr/goods/view?no=80" ><img class="w100" src="./img/main/banner_main2.png" alt=""></a>
         </div>
     </div>
     <button id="goTopBtn" class="go-top-btn" type="button"></button>
-    <button class="btn-main mt230" type="button" onclick="alert('준비중입니다')">5km 함께 걷기</button>
+    <button class="btn-main mt230" type="button" onclick="onShop();">5km 함께 걷기</button>
 </body>
 </html>
 <script>
@@ -589,5 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+function onShop(){
+	location.href="https://2024.my5k.co.kr/goods/view?no=80";
+}
 </script>

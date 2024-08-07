@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My5k 어드민</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/table.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="shadow">
+        <div class="m0auto align both vm px16">
+          <h1 class="header__logo">
+            <a href=""><img src="images/logo.svg" alt="로고" /></a>
+          </h1>
+          <div class="header__btn align">
+            <button class="btn line round ico1" type="button">로그아웃</button>
+            <button class="btn blue round" type="button">모바일웹 가기</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main m0auto">
+      <aside class="sidebar">
+        <ul class="sidebar__list">
+          <li><a class="btn-menu ico1 active" href="user.html">회원 관리</a></li>
+          <li><a class="btn-menu ico2" href="payment.html">결제 관리</a></li>
+          <!-- <li>
+            <a class="btn-menu ico5" href="#none">문서</a>
+            <ul class="sidebar__sub">
+              <li><a href="doc-weighbridge.html">계근대</a></li>
+              <li><a href="doc-lame.html">앉은뱅이</a></li>
+              <li><a href="doc-transaction-statement.html">거래명세서</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </aside>
+
+      <section class="content">
+        <div class="align both">
+          <div class="heading large">회원 목록</div>
+
+        </div>
+        <div class="align vm both pt36">
+            <form name="frm" method="post">
+                <div class="align vm">
+                  
+                  <div class="select-wrap">
+                    <select name="search_type" id="" class="select search">
+                      <option value="">분류</option>
+                      <option value="sName">이름 </option>
+                      <option value="sCorp">업체명 </option>
+                      <option value="sTel">휴대전화</option>
+                      <option value="sEmail">이메일</option>
+                    </select>
+                  </div>
+                  <div>
+                    <input class="table-search" type="search" name="search_word" value="" placeholder="검색어를 입력하세요">
+                    <button class="" type="button" onclick="searching();">검색</button>
+                  </div>
+                  
+                  <div class="table-date ml14">
+                    <input name="start_date" value="" class="" type="date">
+                    <span>~</span>
+                    <input name="end_date" value="" class="" type="date">
+                  </div>
+                  
+                  <a href="#" class="btn small skyblue round ml14" role="button" onclick="goExcel();">엑셀 다운로드</a>
+                </div></form>
+                <div>
+                  <button class="btn small line red round ml14" type="button" onclick="onDel();">선택삭제</button>
+                </div>
+              </div>
+       
+        <table class="table-type1 mt29 table-sortable">
+          <colgroup>
+            <col style="width: 5rem" />
+            <col  />
+            <col style="width: 10rem" />
+            <col />
+            <col />
+            <col />
+            <col style="width: 30rem;" />
+          </colgroup>
+          <thead>
+            <tr onclick="location.href='user-detail.html'">
+              <th><input type="checkbox" name="checkAll" /></th>
+              <th>NO</th>
+              <th>이름</th>
+              <th>아이디</th>
+              <th>이메일</th>
+              <th>휴대폰 번호</th>
+              <th>주소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            <tr onclick="location.href='user-detail.html'">
+              <td><input type="checkbox" name="checkOne" /></td>
+              <td>99999</td>
+              <td>김이박상</td>
+              <td>banfrom602</td>
+              <td>banfrom602@karainc.ac.kr</td>
+              <td>01066664444</td>
+              <td>서울시 성북구 동선동 3가 2554-12 602호</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <nav class="pagination mt30">
+            <button class="btn-arrow prev2" type="button">prev2</button>
+            <button class="btn-arrow prev" type="button">prev1</button>
+            <ul>
+              <!--<li><a class="btn-arrow prev2" href="#none"></a></li>
+              <li><a class="btn-arrow prev" href="#none"></a></li>
+              <li><a class="num active" href="#none">1</a></li>
+              <li><a class="num" href="#none">2</a></li>
+              <li><a class="num" href="#none">3</a></li>
+              <li><a class="num" href="#none">4</a></li>
+              <li><a class="num" href="#none">5</a></li>
+              <li><a class="btn-arrow next" href="#none"></a></li>
+              <li><a class="btn-arrow next2" href="#none"></a></li>-->
+			  <li><a class="num active" href=""> 1 </a></li>
+              <li><a class="num" href=""> 2 </a></li>            
+            </ul>
+            <button class="btn-arrow next" type="button">next1</button>
+            <button class="btn-arrow next2" type="button">next2</button>
+          </nav>
+      </section>
+    </main>
+  </body>
+</html>

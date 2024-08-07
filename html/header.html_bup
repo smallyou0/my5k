@@ -1,0 +1,70 @@
+<nav class="nav-b">
+    <a class="logo" href="index.php">My5K</a>
+    <ul>
+        <li class="list"><a href="#none" onclick="alert('준비중입니다')">2024 My5k</a></li>
+        <li class="list"><a href="#none" onclick="alert('준비중입니다')">유의사항</a></li>
+    </ul>
+    <a class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
+    <!-- <a class="btn-login align vm" href="login.html"><img class="mr6" src="../img/main/ico_login.svg" alt="">로그인</a> -->
+</nav>
+<article class="burger">
+    <div class="burger-top">
+        <a href="./devsisters.html">MY5k</a>
+        <a class="close">x</a>
+    </div>
+    <div class="burger-list">
+        <a href="#none" onclick="alert('준비중입니다')">2024 My5k</a>
+        <a href="#none" onclick="alert('준비중입니다')">유의사항</a>
+        <!-- <a href="login.html">로그인</a> -->
+    </div>
+</article>
+<script>
+    $(document).ready(function() {
+        // 현재 페이지의 URL을 가져옵니다.
+        const currentPage = window.location.pathname;
+
+        // login.html 페이지가 아니라면 스크립트를 실행합니다.
+        if (!currentPage.includes('login.html')) {
+            const elBurger = document.querySelector('.burger-ic');
+            const elBurgers = document.querySelector('.burger');
+            const elClose = document.querySelector('.close');
+
+            elBurger.onclick = function(){
+                elBurgers.classList.add('active');
+            }
+
+            elClose.onclick = function(){
+                elBurgers.classList.remove('active');
+            }
+
+            $(".list").on('mouseenter',function(){
+                $(".list3 ").stop().slideDown()
+            })
+
+            $(".list").on('mouseleave',function(){
+                $(".list3").stop().slideUp()
+            })
+
+            let pos = {y:0,y2:0,status:true};
+            const elBg = document.querySelector('header');
+            
+            window.addEventListener('scroll',function(){
+                pos.y = window.pageYOffset;
+
+                pos.status = (pos.y > pos.y2) ? true : false;
+                pos.y2 = pos.y;
+
+                if(pos.status){ 
+                    elBg.classList.add('active')
+                }
+
+                if( window.pageYOffset == 0) {
+                    elBg.classList.remove('active')
+                }
+            });
+        } else {
+            // login.html 페이지인 경우 header의 배경색을 빨간색으로 설정합니다.
+            $('header').css('background', 'red');
+        }
+    });
+</script>
