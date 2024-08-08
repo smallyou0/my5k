@@ -29,11 +29,10 @@
     <main class="main m0auto">
       <aside class="sidebar">
         <ul class="sidebar__list">
-          <li><a class="btn-menu ico1 active" href="user.html">회원 관리</a></li>
-          <li><a class="btn-menu ico2" href="payment.html">결제 관리</a></li>
+          <li><a class="btn-menu ico1" href="user.html">회원 관리</a></li>
+          <li><a class="btn-menu ico2 active" href="payment.html">결제 관리</a></li>
         </ul>
       </aside>
-
       <section class="content">
         <div class="align both vm">
           <div class="heading large">결제 상세</div>
@@ -43,7 +42,7 @@
           </div>
         </div>
         <div class="align">
-          <div class="card-type1 pb50 mt39 w33">
+          <div class="card-type1 mt39 w33">
             <form name="" method="post">
               <input type="hidden" name="" value="34">
               <input type="hidden" name="" value="1">
@@ -72,7 +71,7 @@
               </div>
             </form>
           </div>
-          <div class="card-type1 pb50 mt39 w33 ml20">
+          <div class="card-type1 mt39 w33 ml20">
             <form name="" method="post">
               <input type="hidden" name="" value="34">
               <input type="hidden" name="" value="1">
@@ -93,7 +92,7 @@
               </div>
             </form>
           </div>
-          <div class="card-type1 pb50 mt39 w33 ml20">
+          <div class="card-type1 mt39 w33 ml20">
             <form name="" method="post">
               <input type="hidden" name="" value="34">
               <input type="hidden" name="" value="1">
@@ -106,7 +105,14 @@
                   <div class="pt24">
                     <div class="px24">
                       <label class="heading small" for="txt7">결제 상태</label>
-                      <input class="input-type1" id="txt7" type="text" name="" value="김마이오케이" placeholder="이름을 입력해주세요">
+                      <div class="input-btn2 mt10">
+                        <select class="select type2" name="" id="txt7">
+                          <option value="" selected="">결제완료</option>
+                          <option value="">결제취소</option>
+                          <option value="">가상결제진행중</option>
+                          <option value="">결제진행중</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="px24 pt14">
                       <label class="heading small" for="txt8">결제 수단</label>
@@ -119,7 +125,13 @@
                     <div class="px24 pt14">
                       <label class="heading small" for="txt9">총 결제금액</label>
                       <div class="won mt10">
-                        <input class="input-type1 won mt0" id="txt9" type="text" name="" value="300,000" disabled>
+                        <input class="input-type1 mt0" id="txt9" type="text" name="" value="300,000" disabled>
+                      </div>
+                    </div>
+                    <div class="px24 pt14">
+                      <label class="heading small" for="txt10">환불 정보</label>
+                      <div class="mt10">
+                        <input class="input-type1 mt0" id="txt10" type="text" name="" value="비씨 9200 **** **** **** 일시불" disabled>
                       </div>
                     </div>
                   </div>

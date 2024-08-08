@@ -53,7 +53,7 @@
                   <div class="pt24">
                     <div class="px24">
                       <label class="heading small" for="txt1">회원구분</label>
-                      <input class="input-type1" id="txt1" type="text" name="" value="회원" placeholder="이름을 입력해주세요" disabled>
+                      <input class="input-type1" id="txt1" type="text" name="" value="비회원" placeholder="이름을 입력해주세요" disabled>
                     </div>
                     <div class="px24 pt14">
                       <label class="heading small" for="txt2">이름</label>
@@ -62,6 +62,10 @@
                     <div class="px24 pt14">
                       <label class="heading small" for="txt3">휴대폰 번호</label>
                       <input class="input-type1" id="txt3" type="number" name="" value="01011112222" disabled>
+                    </div>
+                    <div class="px24 pt14">
+                      <label class="heading small" for="txt3-2">비밀번호</label>
+                      <input class="input-type1" id="txt3-2" type="password" name="" value="121212" disabled>
                     </div>
                     <div class="px24 pt14">
                       <label class="heading small" for="txt4">주소</label>
@@ -86,7 +90,7 @@
                     </div>
                     <div class="px24 pt14">
                       <label class="heading small" for="txt6">상품 구분</label>
-                      <input class="input-type1" id="txt6" type="text" name="" value="참가권 신청" disabled>
+                      <input class="input-type1" id="txt6" type="text" name="" value="참가권 선물하기" disabled>
                     </div>
                   </div>
                 </div>
@@ -106,7 +110,14 @@
                   <div class="pt24">
                     <div class="px24">
                       <label class="heading small" for="txt7">결제 상태</label>
-                      <input class="input-type1" id="txt7" type="text" name="" value="김마이오케이" placeholder="이름을 입력해주세요">
+                       <div class="input-btn2 mt10">
+                        <select class="select type2" name="" id="txt7">
+                          <option value="DONE" selected="">결제완료</option>
+                          <option value="DONE">결제취소</option>
+                          <option value="DONE">가상결제진행중</option>
+                          <option value="DONE">결제진행중</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="px24 pt14">
                       <label class="heading small" for="txt8">결제 수단</label>
@@ -122,6 +133,12 @@
                         <input class="input-type1 won mt0" id="txt9" type="text" name="" value="300,000" disabled>
                       </div>
                     </div>
+                    <div class="px24 pt14">
+                      <label class="heading small" for="txt10">환불 정보</label>
+                      <div class="mt10">
+                        <input class="input-type1 mt0" id="txt10" type="text" name="" value="비씨 9200 **** **** **** 일시불" disabled>
+                      </div>
+                    </div>                    
                   </div>
                 </div>
               </div>
