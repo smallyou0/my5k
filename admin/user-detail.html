@@ -16,81 +16,82 @@
       <div class="shadow">
         <div class="m0auto align both vm px16">
           <h1 class="header__logo">
-            <a href=""><img src="images/logo.svg" alt="로고" /></a>
+            <a href=""><img src="images/logo_admin.svg" alt="로고" /></a>
           </h1>
           <div class="header__btn align">
-            <button class="btn line round ico1" type="button">로그아웃</button>
-            <button class="btn blue round" type="button">모바일웹 가기</button>
+            <button class="btn line round" type="button">로그아웃</button>
+            <button class="btn red round px16" type="button">전체 DB 다운로드</button>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main m0auto">
-      <aside class="sidebar">
-        <ul class="sidebar__list">
-          <li><a class="btn-menu ico1 active" href="user.html">회원 관리</a></li>
-          <li><a class="btn-menu ico2" href="payment.html">결제 관리</a></li>
-        </ul>
-      </aside>
-
-      <section class="content">
-        <div class="align both">
-          <div class="heading large">회원 상세</div>
-          <div class="align">
-            <button class="btn line round large" type="button">취소하기</button>
-            <button class="btn red round large ml14" type="button">저장하기</button>
-            <button class="btn pink round large ml14" type="button" onclick="location.href='user.html'">목록가기</button>
-          
-          </div>
-        </div>
-        <div class="card-type1 pb50 mt39" style="height: 70vh;">
-          <form name="" method="post">
-      <input type="hidden" name="" value="34">
-      <input type="hidden" name="" value="1">
-    <div class="heading regular px24 py24 border-bottom">기본정보</div>
-          <div class="align pb50">
-            <div class="w33">
-              <div class="pt24">
-                <div class="px24">
-                  <label class="heading small" for="txt1">이름</label>
-                  <input class="input-type1" id="txt1" type="text" name="" value="김마이오케이" placeholder="이름을 입력해주세요">
-                </div>
-                <div class="px24 pt14">
-                  <label class="heading small" for="txt2">휴대폰 번호</label>
-                  <input class="input-type1" id="txt2" type="number" name="" value="01012345678">
-                </div>
-              </div>
-            </div>
-            <div class="w33">
-              <div class="pt24">
-                <div class="pr24">
-                  <label class="heading small" for="txt3">아이디</label>
-                  <input class="input-type1" id="txt3" type="text" name="" value="banform602" placeholder="휴대전화를 입력해주세요">
-                </div>
-                <div class="pr24 pt14">
-                  <label class="heading small" for="txt4">주소</label>
-                  <input class="input-type1" id="txt4" name="" type="text" value="서울시 성북구 동선동 3가 2554-12 602호">
-                </div>
-                
-              </div>
-            </div>
-            <div class="w33">
-              <div class="pt24">
-                <div class="pr24">
-                  <label class="heading small" for="txt5">성별</label>
-                  <input class="input-type1" id="txt5" type="text" name="" value="남성" placeholder="휴대전화를 입력해주세요">
-                </div>
-                <div class="pr24 pt14">
-                  <label class="heading small" for="txt6">이메일</label>
-                  <input class="input-type1" id="txt6" name="" type="email" value="example@gmail.com">
-                </div>
-                
-              </div>
+    <div class="main-wrap">
+      <main class="main m0auto">
+        <aside class="sidebar">
+          <ul class="sidebar__list">
+            <li><a class="btn-menu ico1 active" href="user.html">회원 관리</a></li>
+            <li><a class="btn-menu ico2" href="payment.html">결제 관리</a></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <div class="align both">
+            <div class="heading large">회원 상세</div>
+            <div class="align">
+              <button class="btn line round large" type="button">취소하기</button>
+              <button class="btn red round large ml14" type="button">저장하기</button>
+              <button class="btn pink round large ml14" type="button" onclick="location.href='user.html'">목록가기</button>
+      
             </div>
           </div>
-        </form></div>
-      </section>
-    </main>
+          <div class="card-type1 pb50 mt39" style="height: 70vh;">
+            <form name="" method="post">
+        <input type="hidden" name="" value="34">
+        <input type="hidden" name="" value="1">
+      <div class="heading regular px24 py24 border-bottom">기본정보</div>
+            <div class="align pb50">
+              <div class="w33">
+                <div class="pt24">
+                  <div class="px24">
+                    <label class="heading small" for="txt1">이름</label>
+                    <input class="input-type1" id="txt1" type="text" name="" value="김마이오케이" placeholder="이름을 입력해주세요">
+                  </div>
+                  <div class="px24 pt14">
+                    <label class="heading small" for="txt2">휴대폰 번호</label>
+                    <input class="input-type1" id="txt2" type="number" name="" value="01012345678">
+                  </div>
+                </div>
+              </div>
+              <div class="w33">
+                <div class="pt24">
+                  <div class="pr24">
+                    <label class="heading small" for="txt3">아이디</label>
+                    <input class="input-type1" id="txt3" type="text" name="" value="banform602" placeholder="휴대전화를 입력해주세요">
+                  </div>
+                  <div class="pr24 pt14">
+                    <label class="heading small" for="txt4">주소</label>
+                    <input class="input-type1" id="txt4" name="" type="text" value="서울시 성북구 동선동 3가 2554-12 602호">
+                  </div>
+      
+                </div>
+              </div>
+              <div class="w33">
+                <div class="pt24">
+                  <div class="pr24">
+                    <label class="heading small" for="txt5">성별</label>
+                    <input class="input-type1" id="txt5" type="text" name="" value="남성" placeholder="휴대전화를 입력해주세요">
+                  </div>
+                  <div class="pr24 pt14">
+                    <label class="heading small" for="txt6">이메일</label>
+                    <input class="input-type1" id="txt6" name="" type="email" value="example@gmail.com">
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </form></div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

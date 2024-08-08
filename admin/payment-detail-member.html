@@ -16,239 +16,249 @@
       <div class="shadow">
         <div class="m0auto align both vm px16">
           <h1 class="header__logo">
-            <a href=""><img src="images/logo.svg" alt="로고" /></a>
+            <a href=""><img src="images/logo_admin.svg" alt="로고" /></a>
           </h1>
           <div class="header__btn align">
-            <button class="btn line round ico1" type="button">로그아웃</button>
-            <button class="btn blue round" type="button">모바일웹 가기</button>
+            <button class="btn line round" type="button">로그아웃</button>
+            <button class="btn red round px16" type="button">전체 DB 다운로드</button>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main m0auto">
-      <aside class="sidebar">
-        <ul class="sidebar__list">
-          <li><a class="btn-menu ico1" href="user.html">회원 관리</a></li>
-          <li><a class="btn-menu ico2 active" href="payment.html">결제 관리</a></li>
-        </ul>
-      </aside>
-      <section class="content">
-        <div class="align both vm">
-          <div class="heading large">결제 상세</div>
+    <div class="main-wrap">
+      <main class="main m0auto">
+        <aside class="sidebar">
+          <ul class="sidebar__list">
+            <li><a class="btn-menu ico1" href="user.html">회원 관리</a></li>
+            <li><a class="btn-menu ico2 active" href="payment.html">결제 관리</a></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <div class="align both vm">
+            <div class="heading large">결제 상세</div>
+            <div class="align">
+              <button class="btn line gray2 large" type="button">취소하기</button>
+              <button class="btn red round large ml14" type="button">저장하기</button>
+              <button class="btn pink round large ml14" type="button" onclick="location.href='payment.html'">목록가기</button>
+      
+            </div>
+          </div>
           <div class="align">
-            <button class="btn pink round large ml14" type="button" onclick="location.href='payment.html'">목록가기</button>
-          
-          </div>
-        </div>
-        <div class="align">
-          <div class="card-type1 mt39 w33">
-            <form name="" method="post">
-              <input type="hidden" name="" value="34">
-              <input type="hidden" name="" value="1">
-              <div class="heading regular px24 py24 border-bottom">구매자 정보</div>
-              <div class="align pb50">
-                <div>
-                  <div class="pt24">
-                    <div class="px24">
-                      <label class="heading small" for="txt1">회원구분</label>
-                      <input class="input-type1" id="txt1" type="text" name="" value="회원" placeholder="이름을 입력해주세요" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt2">이름</label>
-                      <input class="input-type1" id="txt2" type="text" name="" value="김마이오케이" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt3">휴대폰 번호</label>
-                      <input class="input-type1" id="txt3" type="number" name="" value="01011112222" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt4">주소</label>
-                      <input class="input-type1" id="txt4" type="text" name="" value="서울시 성북구 동소문로 20가길 3098 401호" disabled>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="card-type1 mt39 w33 ml20">
-            <form name="" method="post">
-              <input type="hidden" name="" value="34">
-              <input type="hidden" name="" value="1">
-              <div class="heading regular px24 py24 border-bottom">상품 정보</div>
-              <div class="align pb50">
-                <div>
-                  <div class="pt24">
-                    <div class="px24">
-                      <label class="heading small" for="txt5">주문번호</label>
-                      <input class="input-type1" id="txt5" type="number" name="" value="468495411213232" placeholder="이름을 입력해주세요" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt6">상품 구분</label>
-                      <input class="input-type1" id="txt6" type="text" name="" value="참가권 신청" disabled>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="card-type1 mt39 w33 ml20">
-            <form name="" method="post">
-              <input type="hidden" name="" value="34">
-              <input type="hidden" name="" value="1">
-              <div class="align both vm border-bottom">
-                <div class="heading regular px24 py24">결제 정보</div>
-                <button class="btn small line gray1 round mr24" type="button">환불하기</button>
-              </div>
-              <div class="align pb50">
-                <div>
-                  <div class="pt24">
-                    <div class="px24">
-                      <label class="heading small" for="txt7">결제 상태</label>
-                      <div class="input-btn2 mt10">
-                        <select class="select type2" name="" id="txt7">
-                          <option value="" selected="">결제완료</option>
-                          <option value="">결제취소</option>
-                          <option value="">가상결제진행중</option>
-                          <option value="">결제진행중</option>
-                        </select>
+            <div class="card-type1 mt39 w33">
+              <form name="" method="post">
+                <input type="hidden" name="" value="34">
+                <input type="hidden" name="" value="1">
+                <div class="heading regular px24 py24 border-bottom">구매자 정보</div>
+                <div class="align pb50">
+                  <div>
+                    <div class="pt24">
+                      <div class="px24">
+                        <label class="heading small" for="txt1">회원구분</label>
+                        <input class="input-type1" id="txt1" type="text" name="" value="회원" placeholder="이름을 입력해주세요" disabled>
                       </div>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt8">결제 수단</label>
-                      <input class="input-type1" id="txt8" type="text" name="" value="신용카드" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt9">결제 일시</label>
-                      <input class="input-type1" id="txt9" type="text" name="" value="24.02.03(12:51)" disabled>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt9">총 결제금액</label>
-                      <div class="won mt10">
-                        <input class="input-type1 mt0" id="txt9" type="text" name="" value="300,000" disabled>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt2">이름</label>
+                        <input class="input-type1" id="txt2" type="text" name="" value="김마이오케이" disabled>
                       </div>
-                    </div>
-                    <div class="px24 pt14">
-                      <label class="heading small" for="txt10">환불 정보</label>
-                      <div class="mt10">
-                        <input class="input-type1 mt0" id="txt10" type="text" name="" value="비씨 9200 **** **** **** 일시불" disabled>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt3">휴대폰 번호</label>
+                        <input class="input-type1" id="txt3" type="number" name="" value="01011112222" disabled>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt4">주소</label>
+                        <input class="input-type1" id="txt4" type="text" name="" value="서울시 성북구 동소문로 20가길 3098 401호" disabled>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </form>
+            </div>
+            <div class="card-type1 mt39 w33 ml20">
+              <form name="" method="post">
+                <input type="hidden" name="" value="34">
+                <input type="hidden" name="" value="1">
+                <div class="heading regular px24 py24 border-bottom">상품 정보</div>
+                <div class="align pb50">
+                  <div>
+                    <div class="pt24">
+                      <div class="px24">
+                        <label class="heading small" for="txt5">주문번호</label>
+                        <input class="input-type1" id="txt5" type="number" name="" value="468495411213232" placeholder="이름을 입력해주세요" disabled>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt6">상품 구분</label>
+                        <input class="input-type1" id="txt6" type="text" name="" value="참가권 신청" disabled>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-type1 mt39 w33 ml20">
+              <form name="" method="post">
+                <input type="hidden" name="" value="34">
+                <input type="hidden" name="" value="1">
+                <div class="align both vm border-bottom">
+                  <div class="heading regular px24 py24">결제 정보</div>
+                  <button class="btn small line gray1 round mr24" type="button">전체 환불하기</button>
+                </div>
+                <div class="align pb50">
+                  <div>
+                    <div class="pt24">
+                      <div class="px24">
+                        <label class="heading small" for="txt7">결제 상태</label>
+                        <div class="input-btn2 mt10">
+                          <select class="select type2" name="" id="txt7">
+                            <option value="" selected="">결제완료</option>
+                            <option value="">결제취소</option>
+                            <option value="">가상결제진행중</option>
+                            <option value="">결제진행중</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt8">결제 수단</label>
+                        <input class="input-type1" id="txt8" type="text" name="" value="신용카드" disabled>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt9">결제 일시</label>
+                        <input class="input-type1" id="txt9" type="text" name="" value="24.02.03(12:51)" disabled>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt9">총 결제금액</label>
+                        <div class="won mt10">
+                          <input class="input-type1 mt0" id="txt9" type="text" name="" value="300,000" disabled>
+                        </div>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt10">결제 정보</label>
+                        <div class="mt10">
+                          <input class="input-type1 mt0" id="txt10" type="text" name="" value="비씨 9200 **** **** **** 일시불" disabled>
+                        </div>
+                      </div>
+                      <div class="px24 pt14">
+                        <label class="heading small" for="txt11">환불 계좌</label>
+                        <div class="mt10">
+                          <input class="input-type1 mt0" id="txt11" type="text" name="" value="해당 없음" disabled>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card-type1 pb50 mt39">
+            <form name="" method="post">
+              <div class="heading regular px24 py24 border-bottom">참여자 정보</div>
+              <table class="table-type1 table-sortable">
+                <colgroup>
+                  <col style="width: 100px;">
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead style="border-bottom: 1px solid #d1d1d1;">
+                  <tr onclick="location.href='user-detail.html'">
+                    <th>NO</th>
+                    <th>이름</th>
+                    <th>휴대폰 번호</th>
+                    <th>티셔츠 사이즈</th>
+                    <th>동반유아</th>
+                    <th>동반아동</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+      
+                </tbody>
+              </table>
             </form>
           </div>
-        </div>
-        <div class="card-type1 pb50 mt39">
-          <form name="" method="post">
-            <div class="heading regular px24 py24 border-bottom">참여자 정보</div>
-            <table class="table-type1 table-sortable">
-              <colgroup>
-                <col style="width: 100px;">
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-              </colgroup>
-              <thead style="border-bottom: 1px solid #d1d1d1;">
-                <tr onclick="location.href='user-detail.html'">
-                  <th>NO</th>
-                  <th>이름</th>
-                  <th>휴대폰 번호</th>
-                  <th>티셔츠 사이즈</th>
-                  <th>동반유아</th>
-                  <th>동반아동</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>99999</td>
-                  <td>김이박상</td>
-                  <td>01066664444</td>
-                  <td>L</td>
-                  <td>2</td>
-                  <td>1</td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </form>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
