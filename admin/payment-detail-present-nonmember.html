@@ -113,10 +113,12 @@
                         <label class="heading small" for="txt7">결제 상태</label>
                          <div class="input-btn2 mt10">
                           <select class="select type2" name="" id="txt7">
-                            <option value="DONE" selected="">결제완료</option>
+                            <option value="DONE">입금대기</option>
+                            <option value="DONE" selected>결제완료</option>
                             <option value="DONE">결제취소</option>
-                            <option value="DONE">가상결제진행중</option>
-                            <option value="DONE">결제진행중</option>
+                            <option value="DONE">배송준비중</option>
+                            <option value="DONE">배송중</option>
+                            <option value="DONE">배송완료</option>
                           </select>
                         </div>
                       </div>
@@ -157,19 +159,24 @@
               <div class="heading regular px24 py24 border-bottom">참여자 정보</div>
               <table class="table-type1 table-sortable">
                 <colgroup>
-                  <col style="width: 100px;">
-                  <col>
-                  <col>
-                  <col style="width: 350px;">
                   <col >
-                  <col style="width: 100px;">
-                  <col style="width: 100px;">
-                  <col style="width: 100px;">
+                  <col >
                   <col>
+                  <col style="width: 120px;"> 
+                  <col style="width: 250px;">
+                  <col >
+                  <col >
+                  <col >
+                  <col >
                   <col>
+                  <col style="width: 150px;">
+                  <col style="width: 150px;">
                 </colgroup>
                 <thead style="border-bottom: 1px solid #d1d1d1;">
                   <tr>
+                    <th>
+                      <input type="checkbox" name="checkOne">
+                    </th>
                     <th>NO</th>
                     <th>이름</th>
                     <th>휴대폰 번호</th>
@@ -180,10 +187,14 @@
                     <th>동반아동</th>
                     <th>주소입력</th>
                     <th>배송상태</th>
+                    <th>환불처리</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -202,28 +213,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
-                  </tr>
-                  <tr>
-                    <td>99999</td>
-                    <td>김이박상</td>
-                    <td>01066664444</td>
-                    <td>서울시 성북구 동소문로 20가길 3098 401호</td>
-                    <td>https://xenosium.com/entry/8679/</td>
-                    <td>L</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>N</td>
                     <td>
                       <select class="select small" name="" id="">
                         <option value="">결제완료</option>
-                        <option value="">결제취소</option>
-                        <option value="">배송준비</option>
-                        <option value="">배송중</option>
-                        <option value="">배송완료</option>
+                        <option value="">환불완료</option>
                       </select>
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -242,8 +242,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -262,28 +271,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
-                  </tr>
-                  <tr>
-                    <td>99999</td>
-                    <td>김이박상</td>
-                    <td>01066664444</td>
-                    <td class="red">입력기간 초과</td>
-                    <td>https://xenosium.com/entry/8679/</td>
-                    <td>L</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>N</td>
                     <td>
                       <select class="select small" name="" id="">
                         <option value="">결제완료</option>
-                        <option value="">결제취소</option>
-                        <option value="">배송준비</option>
-                        <option value="">배송중</option>
-                        <option value="">배송완료</option>
+                        <option value="">환불완료</option>
                       </select>
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -302,8 +300,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -322,8 +329,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -342,8 +358,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -362,8 +387,17 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
                     <td>99999</td>
                     <td>김이박상</td>
                     <td>01066664444</td>
@@ -382,7 +416,72 @@
                         <option value="">배송완료</option>
                       </select>
                     </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
                   </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>주소 미입력</td>
+                    <td>https://xenosium.com/entry/8679/</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>N</td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">결제취소</option>
+                        <option value="">배송준비</option>
+                        <option value="">배송중</option>
+                        <option value="">배송완료</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="checkOne">
+                    </td>
+                    <td>99999</td>
+                    <td>김이박상</td>
+                    <td>01066664444</td>
+                    <td>주소 미입력</td>
+                    <td>https://xenosium.com/entry/8679/</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>N</td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">결제취소</option>
+                        <option value="">배송준비</option>
+                        <option value="">배송중</option>
+                        <option value="">배송완료</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="select small" name="" id="">
+                        <option value="">결제완료</option>
+                        <option value="">환불완료</option>
+                      </select>
+                    </td>
+                  </tr>
+                 
                 </tbody>
               </table>
             </form>
