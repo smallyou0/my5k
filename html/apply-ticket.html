@@ -13,6 +13,7 @@
     <script src="../js/counter.min.js"></script>
     <script src="../js/about.js"></script>
     <script src="../js/counter.js" defer></script>
+    <script src="../js/modal.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -22,7 +23,7 @@
         <div class="input-wrap">
             <!-- <p class="phrase">함께 걸어요 My5k</p> -->
             <h2>참가권 신청</h2>
-            <div class="input-wrap__subtitle pb32">구매자 정보</div>
+            <div class="input-wrap__subtitle pb32"><div class="label-title">구매자 정보</div></div>
             <label class="label pb8" for="txt1"><span class="essential">*</span>이름</label>
             <input class="input mb32" id="txt1" type="text" placeholder="이름을 입력해주세요.">
 
@@ -37,13 +38,13 @@
             <input class="input" type="tel" placeholder="상세주소를 입력해주세요.">
             <div class="hr mt48 mb56"></div>
 
-            <div class="input-wrap__subtitle pb32">주문 정보</div>
+            <div class="input-wrap__subtitle pb32"><div class="label-title">주문 정보</div></div>
             <ul class="list-info">
                 <li>
                     <div class="list-info__title">상품명</div>
                     <div class="list-info__info">
-                        2024 My5K 캠페인 참가 신청 [서울]
-                        <br>(My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)
+                        2024 My5K 캠페인 참가 신청 [서울]<br>
+                        (My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)
                     </div>
                 </li>
                 <li>
@@ -52,7 +53,13 @@
                 </li>
                 <li>
                     <div class="list-info__title">참여자 수</div>
-                    <div class="list-info__info">- 2 +</div>
+                    <div class="list-info__info">
+                        <div class="counter">
+                            <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
+                            <span>0</span>
+                            <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
+                          </div>
+                    </div>
                 </li>
                 <li>
                     <div class="list-info__title">주문금액</div>
@@ -61,19 +68,20 @@
             </ul>
             <div class="hr mt56 mb32"></div>
             <div class="input-wrap__subtitle pb32">
-                참여자1
-                <div class="align vm">
-                    <input type="checkbox">
-                    <label for="">구매자 정보와 동일</label>
-                </div>
+                <div class="label-title">참여자1</div>
+                <label for="agree" class="chk_box align vm">
+                    <input type="checkbox" id="agree"  />
+                    <span class="on"></span>
+                    <div class="label-phrase">구매자 정보와 동일</div>
+                </label>
             </div>
             <label class="label pb8" for="txt4"><span class="essential">*</span>이름</label>
             <input class="input mb32" id="txt4" type="text" placeholder="이름을 입력해주세요.">
             <label class="label pb8" for="txt5">휴대폰 번호</label>
             <input class="input mb32" id="txt5" type="text" placeholder="이름을 입력해주세요.">
-            <label class="label pb8" for="txt6">티셔츠 사이즈</label>
+            <label class="label pb8" for="txt6"><span class="essential">*</span>티셔츠 사이즈</label>
             <ul class="size-radio">
-                <li><input type="radio" id="size1" name="size"> <label for="size1">S</label></li>
+                <li><input type="radio" id="size1" name="size" checked> <label for="size1">S</label></li>
                 <li><input type="radio" id="size2" name="size"> <label for="size2">M</label></li>
                 <li><input type="radio" id="size3" name="size"> <label for="size3">L</label></li>
                 <li><input type="radio" id="size4" name="size"> <label for="size4">XL</label></li>
@@ -95,7 +103,7 @@
                 </li>
                 <li>
                     <div class="list-info__title">동반 아동(8~11세)</div>
-                    <div class="list-info__info">
+                    <div class="list-info__info ml4">
                         <div class="counter">
                             <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
                             <span>0</span>
@@ -106,10 +114,10 @@
             </ul>
             <p class="note-phrase mt32">11세 이하 어린이는 참가비가 무료입니다. 동반할 아동 인원을 신청해 주시면 행사 당일 현장에서 참여 확인 후 아동의 티셔츠가 선물로 지급됩니다.</p>
             <div class="hr mt48 mb56"></div>
-            <div class="input-wrap__subtitle pb32">결제 수단</div>
+            <div class="input-wrap__subtitle pb32"><div class="label-title">결제 수단</div></div>
             <ul class="payment-radio">
                 <li>
-                    <input type="radio" id="payment1" name="payment">
+                    <input type="radio" id="payment1" name="payment" checked>
                     <label for="payment1">
                         <span>신용카드</span>
                     </label>
@@ -127,7 +135,7 @@
                     </label>
                 </li>
             </ul>
-            <div class="text1 mt32">환불 계좌</div>
+            <label class="label pb8 pt32"><span class="essential">*</span>환불 계좌</label>
             <p class="pt8 text2">계좌이체, 무통장 입금 결제 후 환불 시 결제 금액을 입금 받으실 계좌번호 정보를 입력해주세요.</p>
             <div class="mt16 select-input">
                 <select name="" id="">
@@ -142,8 +150,17 @@
                 <strong>60,000</strong>
             </div>
 
-            <button class="btn-main2 mt56" type="button">결제하기</button>
+            <button class="btn-main2 mt56" type="button" id="btnPayment">결제하기</button>
         </div>
+    </div>
+    <div class="layer"></div>
+    <div class="alert-modal" id="alertModal1">
+        <div class="alert-modal__title">참가권 신청이 완료되었습니다.</div>
+        <button class="btn-close" type="button">신청내역 확인</button>
+    </div>
+    <div class="alert-modal">
+        <div class="alert-modal__title">{항목}을 입력해주세요.</div>
+        <button class="btn-close" type="button">확인</button>
     </div>
 </body>
 </html>
