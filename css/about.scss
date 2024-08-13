@@ -2018,6 +2018,10 @@ body {
                 background: #8B8B8B;
                 color: #fff;
             }
+            &.pink {
+                background: #FEE5EB;
+                color: #F60035;
+            }
         }
     }
 }
@@ -2156,7 +2160,7 @@ body {
                 color: #F60035;
                 font-size: 14px;
                 font-weight: 600;
-                line-height: 130%;
+                line-height: 130%; /* 18.2px */
                 letter-spacing: 0.3px;                
             }
             &:nth-child(2n) {
@@ -2268,6 +2272,124 @@ body {
       }
     } /*arrow*/
   } /*pagination*/
+  #kakao-login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    background: #FEE500;
+    gap: 12px;
+    color: #171717;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 4px;
+    &.ico1 {
+        &::before {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(../img/ico_kakao.svg) no-repeat 0 0 / contain;
+        }
+    }
+  }
+  .bar-or {
+    text-align: center;
+    color: #464646;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17px;
+    span {
+        background: #fff;
+        padding: 0 16px;
+    }
+    &.line {
+        position: relative;
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: -1;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #d1d1d1;
+        }
+    }
+  }
+.ico-eye {
+    position: relative;
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../img/ico_eye_close.svg) no-repeat 0 0 / contain;
+        &.active {
+            background: url(../img/ico_eye_open.svg) no-repeat 0 0 / contain;
+
+        }
+    }
+}  
+.input-alert {
+    position: relative;
+    &.success {
+        input {
+            outline: 2px solid #5B9DFF;
+        }
+        .alert-phrase {
+            color: #5B9DFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            padding-top: 6px;
+            &.ico {
+                display: flex;
+                gap: 2px;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/ico_success.svg) no-repeat 0 0 / contain;
+                }
+            } 
+        }
+    }
+    &.fail {
+        input {
+            outline: 2px solid #DA1E27;
+        }
+        .alert-phrase {
+            color: #DA1E27;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            padding-top: 6px;
+            &.ico {
+                display: flex;
+                gap: 2px;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/ico_fail.svg) no-repeat 0 0 / contain;
+                }
+            } 
+        }
+    }
+
+}
 
 
 
@@ -2280,6 +2402,8 @@ body {
 }
 .mt8 { margin-top: 8px; }
 .mt10 { margin-top: 10px; }
+.mt12 { margin-top: 12px; }
+.mt24 { margin-top: 24px; }
 .mt30 { margin-top: 30px; }
 .mt32 { margin-top: 32px; }
 .mt33 { margin-top: 33px; }
@@ -2295,6 +2419,7 @@ body {
 .mt300 { margin-top: 420px; }
 .ml4 { margin-left: 4px; }
 .ml5 { margin-left: 5px; }
+.ml8 { margin-left: 8px; }
 .ml10 { margin-left: 10px; }
 .ml12 { margin-left: 12px; }
 .ml16 { margin-left: 16px; }

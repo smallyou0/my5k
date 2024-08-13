@@ -81,6 +81,16 @@ $('.btn-close').click(function() {
     $('.layer').removeClass('active')
     $('#alertModal1').removeClass('active')
 })
+// login
+// 구매 유형을 선택해 주세요.
+$('#btnNonmemPay').click(function() {
+    $('.layer').addClass('active')
+    $('#alertModal1').addClass('active')
+})
+$('.btn-close').click(function() {
+    $('.layer').removeClass('active')
+    $('#alertModal1').removeClass('active')
+})
 
 
 
