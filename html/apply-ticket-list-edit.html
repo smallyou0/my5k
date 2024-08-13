@@ -21,29 +21,20 @@
     
     <div class="wrap">
         <div class="input-wrap">
-            <!-- <p class="phrase">함께 걸어요 My5k</p> -->
-            <h2>참가권 신청</h2>
+            <h2>참가권 신청 내역 수정</h2>
             <div class="input-wrap__subtitle pb32"><div class="label-title">구매자 정보</div></div>
             <label class="label pb8" for="txt1"><span class="essential">*</span>이름</label>
-            <input class="input mb32" id="txt1" type="text" placeholder="이름을 입력해주세요.">
+            <input class="input mb32" id="txt1" value="김마이" type="text" placeholder="이름을 입력해주세요.">
 
             <label class="label pb8" for="txt2"><span class="essential">*</span>휴대폰 번호</label>
-            <input class="input mb32" id="txt2" type="tel" placeholder="휴대폰번호를 입력해주세요.">
+            <input class="input mb32" id="txt2" value="01012345678" type="tel" placeholder="휴대폰번호를 입력해주세요.">
 
             <label class="label pb8" for="txt3"><span class="essential">*</span>주소</label>
             <div class="input-type2">
-                <input class="input mb8" id="txt3" type="tel" placeholder="주소를 입력해주세요.">
+                <input class="input mb8" id="txt3" value="서울특별시 영등포구 선유로 202" type="tel" placeholder="주소를 입력해주세요.">
                 <button type="button">검색</button>
             </div>
-            <input class="input" type="tel" placeholder="상세주소를 입력해주세요.">
-
-            <label class="label pb8 pt32" for="pw1"><span class="essential">*</span>비회원 주문조회 비밀번호</label>
-            <input class="input mb32" id="pw1" type="password" placeholder="6~10자 영문자, 숫자 조합">
-            
-            <label class="label pb8" for="pw2"><span class="essential">*</span>비밀번호 확인</label>
-            <input class="input mb32" id="pw2" type="password" placeholder="6~10자 영문자, 숫자 조합">
-            
-            
+            <input class="input" type="tel" value="NCMN" placeholder="상세주소를 입력해주세요.">
             <div class="hr mt48 mb56"></div>
 
             <div class="input-wrap__subtitle pb32"><div class="label-title">주문 정보</div></div>
@@ -51,9 +42,13 @@
                 <li>
                     <div class="list-info__title">상품명</div>
                     <div class="list-info__info">
-                        2024 My5K 캠페인 참가 신청 [서울]<br>
+                        2024 My5K 캠페인 참가 신청 <br>
                         (My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)
                     </div>
+                </li>
+                <li>
+                    <div class="list-info__title">주문 번호</div>
+                    <div class="list-info__info">20240731347201</div>
                 </li>
                 <li>
                     <div class="list-info__title">상품가격</div>
@@ -61,20 +56,14 @@
                 </li>
                 <li>
                     <div class="list-info__title">참여자 수</div>
-                    <div class="list-info__info">
-                        <div class="counter">
-                            <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
-                            <span>0</span>
-                            <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
-                          </div>
-                    </div>
+                    <div class="list-info__info">2명</div>
                 </li>
                 <li>
                     <div class="list-info__title">주문금액</div>
                     <div class="list-info__info">60,000원</div>
                 </li>
             </ul>
-            <div class="hr mt56 mb32"></div>
+            <div class="hr mt48 mb32"></div>
             <div class="input-wrap__subtitle pb32">
                 <div class="label-title">참여자1</div>
                 <label for="agree" class="chk_box align vm">
@@ -84,9 +73,9 @@
                 </label>
             </div>
             <label class="label pb8" for="txt4"><span class="essential">*</span>이름</label>
-            <input class="input mb32" id="txt4" type="text" placeholder="이름을 입력해주세요.">
+            <input class="input mb32" id="txt4" value="김마이" type="text" placeholder="이름을 입력해주세요.">
             <label class="label pb8" for="txt5">휴대폰 번호</label>
-            <input class="input mb32" id="txt5" type="text" placeholder="이름을 입력해주세요.">
+            <input class="input mb32" id="txt5" value="01012345678" type="text" placeholder="이름을 입력해주세요.">
             <label class="label pb8" for="txt6"><span class="essential">*</span>티셔츠 사이즈</label>
             <ul class="size-radio">
                 <li><input type="radio" id="size1" name="size" checked> <label for="size1">S</label></li>
@@ -104,7 +93,7 @@
                     <div class="list-info__info">
                         <div class="counter">
                             <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
-                            <span>0</span>
+                            <span>1</span>
                             <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
                           </div>
                     </div>
@@ -114,7 +103,7 @@
                     <div class="list-info__info ml4">
                         <div class="counter">
                             <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
-                            <span>0</span>
+                            <span>2</span>
                             <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
                           </div>
                     </div>
@@ -122,81 +111,37 @@
             </ul>
             <p class="note-phrase mt32">11세 이하 어린이는 참가비가 무료입니다. 동반할 아동 인원을 신청해 주시면 행사 당일 현장에서 참여 확인 후 아동의 티셔츠가 선물로 지급됩니다.</p>
             <div class="hr mt48 mb56"></div>
-            <div class="input-wrap__subtitle pb32"><div class="label-title">결제 수단</div></div>
-            <ul class="payment-radio">
+            <div class="input-wrap__subtitle pb32"><div class="label-title">결제 정보</div></div>
+            <ul class="list-info">
                 <li>
-                    <input type="radio" id="payment1" name="payment" checked>
-                    <label for="payment1">
-                        <span>신용카드</span>
-                    </label>
+                    <div class="list-info__title">결제일</div>
+                    <div class="list-info__info">2024.01.01</div>
                 </li>
                 <li>
-                    <input type="radio" id="payment2" name="payment">
-                    <label for="payment2">
-                        <span>계좌이체</span>
-                    </label>
+                    <div class="list-info__title">결제수단</div>
+                    <div class="list-info__info">
+                        신용카드 비씨 9200 **** **** **** (일시불)
+                    </div>
                 </li>
                 <li>
-                    <input type="radio" id="payment3" name="payment">
-                    <label for="payment3">
-                        <span>무통장 입금</span>
-                    </label>
+                    <div class="list-info__title">환불 계좌</div>
+                    <div class="list-info__info">
+                        우리은행 김마이 1002-556-321013
+                    </div>
                 </li>
             </ul>
-            <label class="label pb8 pt32"><span class="essential">*</span>환불 계좌</label>
-            <p class="pt8 text2">계좌이체, 무통장 입금 결제 후 환불 시 결제 금액을 입금 받으실 계좌번호 정보를 입력해주세요.</p>
-            <div class="mt16 select-input">
-                <select name="" id="">
-                    <option value="">은행 선택</option>
-                </select>
-                <input type="text" placeholder="예금주명">
-                <input type="number" placeholder="계좌번호">
-            </div>
-            <div class="hr mt48 mb56"></div>
-            <div class="total-amount align both vm">
-                <strong>총 결제 금액</strong>
+            <div class="total-amount align both vm red pt24">
+                <strong>주문 금액</strong>
                 <strong>60,000</strong>
             </div>
-            <div class="checkbox_group pt56">
-                <!-- counter.js -->
-                <div class="mb24">
-                    <input type="checkbox" id="check_all" >
-                    <label class="totally-agree" for="check_all">약관 전체 동의</label>
-                </div>
-                
-                <div class="mb12">
-                    <input type="checkbox" id="check_1" class="normal">
-                    <label for="check_1">만 14세 이상입니다.(필수)</label>
-                </div>
-                
-                <div class="mb12">
-                    <input type="checkbox" id="check_2" class="normal">
-                    <label for="check_2" class="align both">
-                        이용약관 동의(필수)
-                        <a class="btn-look" href="#none">보기</a>
-                    </label>
-                </div>
-                
-                <div class="mb12">
-                    <input type="checkbox" id="check_3" class="normal">
-                    <label for="check_3" class="align both">
-                        개인정보 수집 및 이용 동의(필수)
-                        <a class="btn-look" href="#none">보기</a>
-                    </label>
-                </div>
-              </div>            
 
-            <button class="btn-main2 mt56" type="button" id="btnPayment">결제하기</button>
+            <button class="btn-main2 mt56" type="button" id="editCompleted">수정 완료</button>
         </div>
     </div>
     <div class="layer"></div>
     <div class="alert-modal" id="alertModal1">
-        <div class="alert-modal__title">참가권 신청이 완료되었습니다.</div>
-        <button class="btn-close" type="button">신청내역 확인</button>
-    </div>
-    <div class="alert-modal">
-        <div class="alert-modal__title">{항목}을 입력해주세요.</div>
-        <button class="btn-close" type="button">확인</button>
+        <div class="alert-modal__title">참가권 신청 정보 수정이 완료되었습니다.</div>
+        <button class="btn-close" type="button" onclick="location.href='apply-ticket-list-detail.html'">확인</button>
     </div>
 </body>
 </html>

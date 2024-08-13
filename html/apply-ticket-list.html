@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My5k</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="../js/counter.js" defer></script>
+    <script src="../js/modal.js" defer></script>    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="input-wrap max1120">
+            <h2>신청 내역</h2>
+            <table class="table-list">
+                <colgroup>
+                    <col />
+                    <col style="width: 150px;" />
+                    <col style="width: 150px;" />
+                    <col style="width: 150px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>결제정보</th>
+                        <th>수량</th>
+                        <th>결제금액</th>
+                        <th>결제상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <div class="align vm order-num">
+                                <strong>2024.01.01</strong>
+                                <p class="ml16">주문번호 1234567890</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr onclick="location.href='apply-ticket-list-detail.html'">
+                        <td>
+                            <div class="align vm product">
+                                <img src="../img/img_product.png" alt="">
+                                <div class="ml20">
+                                    <strong>참가권 신청</strong>
+                                    <div class="pt16">
+                                        <p>2024 My5K 캠페인 참가 신청</p>
+                                        <p>(My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">4</td>
+                        <td class="text-center">99,999원</td>
+                        <td class="text-center">입금대기</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="align vm order-num">
+                                <strong>2024.01.01</strong>
+                                <p class="ml16">주문번호 1234567890</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr onclick="location.href='apply-ticket-present-list.html'">
+                        <td>
+                            <div class="align vm product">
+                                <img src="../img/img_product.png" alt="">
+                                <div class="ml20">
+                                    <strong class="gray">참가권 선물</strong>
+                                    <div class="pt16">
+                                        <p>2024 My5K 캠페인 참가 신청</p>
+                                        <p>(My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            10
+                            <div class="alert pt4">(배송지 미입력 8명)</div>
+                        </td>
+                        <td class="text-center">99,999원</td>
+                        <td class="text-center">결제완료</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="align vm order-num">
+                                <strong>2024.01.01</strong>
+                                <p class="ml16">주문번호 1234567890</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align vm product">
+                                <img src="../img/img_product.png" alt="">
+                                <div class="ml20">
+                                    <strong>참가권 신청</strong>
+                                    <div class="pt16">
+                                        <p>2024 My5K 캠페인 참가 신청</p>
+                                        <p>(My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">5</td>
+                        <td class="text-center">99,999원</td>
+                        <td class="text-center">결제완료</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="align vm order-num">
+                                <strong>2024.01.01</strong>
+                                <p class="ml16">주문번호 1234567890</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr onclick="location.href='apply-ticket-present-list.html'">
+                        <td>
+                            <div class="align vm product">
+                                <img src="../img/img_product.png" alt="">
+                                <div class="ml20">
+                                    <strong>참가권 신청</strong>
+                                    <div class="pt16">
+                                        <p>2024 My5K 캠페인 참가 신청</p>
+                                        <p>(My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">99,999원</td>
+                        <td class="text-center">결제완료</td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav class="pagination pt40">
+                <button type="button" class="btn-arrow prev"></button>
+                <ul>
+                    <li class="num active">1</li>
+                    <li class="num">2</li>
+                    <li class="num">3</li>
+                </ul>
+                <button type="button" class="btn-arrow next"></button>
+            </nav>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <div class="alert-modal" id="alertModal1">
+        <div class="alert-modal__title">
+            참가권 신청 정보 수정이 완료되었습니다.        
+        </div>
+        <button class="btn-close" type="button" onclick="location.href='apply-ticket-present-list.html'">확인</button>
+    </div>
+
+
+</body>
+</html>
+<script>
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
+    const elGif = document.querySelector('.ico-heart');
+            window.addEventListener('scroll',function(){
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
+
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
+        
+            if(pos2.status){ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+            else{ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+        })
+
+        $('.num').click(function() {
+            $('.num').removeClass('active');
+            $(this).toggleClass('active');
+        })
+</script>

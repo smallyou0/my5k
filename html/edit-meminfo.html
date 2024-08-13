@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My5k</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="../js/counter.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="input-wrap">
+            <h2>회원정보 수정</h2>   
+            <label class="label pb8" for="txt1">아이디</label>
+            <input class="input mb32" id="txt1" type="text" value="my5k1234" placeholder="이름을 입력해주세요." disabled>
+            <label class="label pb8" for="pw1">기존 비밀번호</label>
+            <input class="input mb32" id="pw1" type="password" placeholder="6~30자 영문, 특수문자, 숫자 조합">
+            <label class="label pb8" for="pw2">새 비밀번호</label>
+            <input class="input mb32" id="pw2" type="password" placeholder="6~30자 영문, 특수문자, 숫자 조합">
+            <label class="label pb8" for="pw3">새 비밀번호 확인</label>
+            <input class="input mb32" id="pw3" type="password" placeholder="6~30자 영문, 특수문자, 숫자 조합">
+            <div class="hr mb32"></div>
+            
+            <label class="label pb8" for="txt3">이름</label>
+            <input class="input mb32" id="txt3" type="text" value="김마이" placeholder="이름을 입력해주세요.">
+
+            <label class="label pb8" for="txt4">성별</label>
+            <select class="select mb32" name="" id="">
+                <option value="">남성</option>
+                <option value="">여성</option>
+            </select>
+            <label class="label pb8" for="txt5">이메일</label>
+            <div class="input-type3">
+                <input type="text" value="my5k">
+                @    
+                <input type="text" value="naver.com">
+                <select name="" id="">
+                    <option value="0">직접 입력</option>
+                    <option value="1">naver.com</option>
+                    <option value="2">gmail.com</option>
+                    <option value="3">daum.net</option>
+                    <option value="4">hanmail.net</option>
+                    <option value="5">nate.net</option>
+                </select>
+            </div>
+            <label class="label pb8 pt32" for="txt6">휴대폰 번호</label>
+            <input class="input mb32" id="txt6" type="tel" value="01012345678" placeholder="휴대폰 번호 ‘-’ 제외하고 입력">
+            <label class="label pb8" for="txt7">주소</label>
+            <div class="input-type2">
+                <input class="input mb8" id="txt7" type="text" value="서울특별시 동대문구 답십리로38길 19" placeholder="주소를 입력해주세요.">
+                <button type="button">검색</button>
+            </div>
+            <input class="input" type="tel" value="306호" placeholder="상세주소를 입력해주세요.">
+            
+            <button class="btn-main2 mt56 btn-edit" type="button">정보 수정</button>
+
+            <div class="layer"></div>
+            <div class="alert-modal" id="alertModal1">
+                <div class="alert-modal__title">회원 정보 수정이 완료되었습니다.</div>
+                <button class="btn-close" type="button" onclick="location.href='mypage.html'">확인</button>
+            </div>         
+</body>
+</html>
+<script>
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
+    const elGif = document.querySelector('.ico-heart');
+            window.addEventListener('scroll',function(){
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
+
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
+        
+            if(pos2.status){ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+            else{ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+        })
+</script>
