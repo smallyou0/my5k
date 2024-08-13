@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My5k</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="../js/counter.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="input-wrap">
+            <!-- <p class="phrase">함께 걸어요 My5k</p> -->
+            <h2>참가권 신청</h2>
+            <div class="input-wrap__subtitle pb32"><div class="label-title">구매자 정보</div></div>
+            <label class="label pb8" for="txt1"><span class="essential">*</span>이름</label>
+            <input class="input mb32" id="txt1" type="text" placeholder="이름을 입력해주세요.">
+
+            <label class="label pb8" for="txt2"><span class="essential">*</span>휴대폰 번호</label>
+            <input class="input mb32" id="txt2" type="tel" placeholder="휴대폰번호를 입력해주세요.">
+
+            <label class="label pb8" for="txt3"><span class="essential">*</span>주소</label>
+            <div class="input-type2">
+                <input class="input mb8" id="txt3" type="tel" placeholder="주소를 입력해주세요.">
+                <button type="button">검색</button>
+            </div>
+            <input class="input" type="tel" placeholder="상세주소를 입력해주세요.">
+
+            <label class="label pb8 pt32" for="pw1"><span class="essential">*</span>비회원 주문조회 비밀번호</label>
+            <input class="input mb32" id="pw1" type="password" placeholder="6~10자 영문자, 숫자 조합">
+            
+            <label class="label pb8" for="pw1"><span class="essential">*</span>비밀번호 확인</label>
+            <input class="input mb32" id="pw1" type="password" placeholder="6~10자 영문자, 숫자 조합">
+            
+            
+            <div class="hr mt48 mb56"></div>
+
+            <div class="input-wrap__subtitle pb32"><div class="label-title">주문 정보</div></div>
+            <ul class="list-info">
+                <li>
+                    <div class="list-info__title">상품명</div>
+                    <div class="list-info__info">
+                        2024 My5K 캠페인 참가 신청 [서울]<br>
+                        (My5K 박스: 티셔츠, 양말, 모자, 팔찌, 기부증서, 안내지)
+                    </div>
+                </li>
+                <li>
+                    <div class="list-info__title">상품가격</div>
+                    <div class="list-info__info">30,000원</div>
+                </li>
+                <li>
+                    <div class="list-info__title">참여자 수</div>
+                    <div class="list-info__info">
+                        <div class="counter">
+                            <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
+                            <span>0</span>
+                            <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-info__title">주문금액</div>
+                    <div class="list-info__info">60,000원</div>
+                </li>
+            </ul>
+            <div class="hr mt56 mb32"></div>
+            <div class="input-wrap__subtitle pb32">
+                <div class="label-title">참여자1</div>
+                <label for="agree" class="chk_box align vm">
+                    <input type="checkbox" id="agree"  />
+                    <span class="on"></span>
+                    <div class="label-phrase">구매자 정보와 동일</div>
+                </label>
+            </div>
+            <label class="label pb8" for="txt4"><span class="essential">*</span>이름</label>
+            <input class="input mb32" id="txt4" type="text" placeholder="이름을 입력해주세요.">
+            <label class="label pb8" for="txt5">휴대폰 번호</label>
+            <input class="input mb32" id="txt5" type="text" placeholder="이름을 입력해주세요.">
+            <label class="label pb8" for="txt6"><span class="essential">*</span>티셔츠 사이즈</label>
+            <ul class="size-radio">
+                <li><input type="radio" id="size1" name="size" checked> <label for="size1">S</label></li>
+                <li><input type="radio" id="size2" name="size"> <label for="size2">M</label></li>
+                <li><input type="radio" id="size3" name="size"> <label for="size3">L</label></li>
+                <li><input type="radio" id="size4" name="size"> <label for="size4">XL</label></li>
+                <li><input type="radio" id="size5" name="size"> <label for="size5">2XL</label></li>
+                <li><input type="radio" id="size6" name="size"> <label for="size6">3XL</label></li>
+                <li><input type="radio" id="size7" name="size"> <label for="size7">4XL</label></li>
+            </ul>
+
+            <ul class="list-info mt32">
+                <li>
+                    <div class="list-info__title">동반 유아(7세 이하)</div>
+                    <div class="list-info__info">
+                        <div class="counter">
+                            <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
+                            <span>0</span>
+                            <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-info__title">동반 아동(8~11세)</div>
+                    <div class="list-info__info ml4">
+                        <div class="counter">
+                            <button class="minus"><img src="../img/ico_minus.svg" alt=""></button>
+                            <span>0</span>
+                            <button class="plus"><img src="../img/ico_plus.svg" alt=""></button>
+                          </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="note-phrase mt32">11세 이하 어린이는 참가비가 무료입니다. 동반할 아동 인원을 신청해 주시면 행사 당일 현장에서 참여 확인 후 아동의 티셔츠가 선물로 지급됩니다.</p>
+            <div class="hr mt48 mb56"></div>
+            <div class="input-wrap__subtitle pb32"><div class="label-title">결제 수단</div></div>
+            <ul class="payment-radio">
+                <li>
+                    <input type="radio" id="payment1" name="payment" checked>
+                    <label for="payment1">
+                        <span>신용카드</span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="payment2" name="payment">
+                    <label for="payment2">
+                        <span>계좌이체</span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="payment3" name="payment">
+                    <label for="payment3">
+                        <span>무통장 입금</span>
+                    </label>
+                </li>
+            </ul>
+            <label class="label pb8 pt32"><span class="essential">*</span>환불 계좌</label>
+            <p class="pt8 text2">계좌이체, 무통장 입금 결제 후 환불 시 결제 금액을 입금 받으실 계좌번호 정보를 입력해주세요.</p>
+            <div class="mt16 select-input">
+                <select name="" id="">
+                    <option value="">은행 선택</option>
+                </select>
+                <input type="text" placeholder="예금주명">
+                <input type="number" placeholder="계좌번호">
+            </div>
+            <div class="hr mt48 mb56"></div>
+            <div class="total-amount align both vm">
+                <strong>총 결제 금액</strong>
+                <strong>60,000</strong>
+            </div>
+            <div class="checkbox_group pt56">
+                <!-- counter.js -->
+                <div class="mb24">
+                    <input type="checkbox" id="check_all" >
+                    <label class="totally-agree" for="check_all">약관 전체 동의</label>
+                </div>
+                
+                <div class="mb12">
+                    <input type="checkbox" id="check_1" class="normal">
+                    <label for="check_1">만 14세 이상입니다.(필수)</label>
+                </div>
+                
+                <div class="mb12">
+                    <input type="checkbox" id="check_2" class="normal">
+                    <label for="check_2" class="align both">
+                        이용약관 동의(필수)
+                        <a class="btn-look" href="#none">보기</a>
+                    </label>
+                </div>
+                
+                <div class="mb12">
+                    <input type="checkbox" id="check_3" class="normal">
+                    <label for="check_3" class="align both">
+                        개인정보 수집 및 이용 동의(필수)
+                        <a class="btn-look" href="#none">보기</a>
+                    </label>
+                </div>
+              </div>            
+
+            <button class="btn-main2 mt56" type="button" id="btnPayment">결제하기</button>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <div class="alert-modal" id="alertModal1">
+        <div class="alert-modal__title">참가권 신청이 완료되었습니다.</div>
+        <button class="btn-close" type="button">신청내역 확인</button>
+    </div>
+    <div class="alert-modal">
+        <div class="alert-modal__title">{항목}을 입력해주세요.</div>
+        <button class="btn-close" type="button">확인</button>
+    </div>
+</body>
+</html>
+<script>
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
+    const elGif = document.querySelector('.ico-heart');
+            window.addEventListener('scroll',function(){
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
+
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
+        
+            if(pos2.status){ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+            else{ 
+                elGif.setAttribute('src',`../img/about/ico_heart.svg`) 
+            }
+        })
+</script>
