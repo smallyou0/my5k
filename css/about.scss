@@ -967,10 +967,36 @@ body {
 }
 .list-apply {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     max-width: 1120px;
     margin: 0 auto;
     gap: 30px;
+    &.type2 {
+        grid-template-columns: 1fr 1fr;
+        li {
+
+            &:nth-child(1) {
+                .bg {
+                    border-radius: 40px;
+                    background: #f3f3f3 url(../img/img_apply_ticket01.svg) no-repeat 100% center / 80%;
+                    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.10);
+                }
+            }
+            &:nth-child(2) {
+                border-radius: 40px;
+                .bg {
+                    background: #f3f3f3 url(../img/img_apply_ticket02.svg) no-repeat 100% center / 80%;
+                    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.10);
+                }
+            }
+            .list-apply__caution { 
+                color: #606060;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 155%;                 
+            }
+        }
+    }
     li {
         .bg {
             height: 600px;
@@ -1579,13 +1605,12 @@ body {
     .main-banner__detail {
         color: #171717;
         font-size: 20px;
-        font-weight: 700;
         line-height: 200%; 
-        text-decoration-line: underline;
         span {
+            text-decoration-line: underline;
             color: #171717;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 700;
             line-height: 200%;
         }
     }
@@ -1669,6 +1694,8 @@ body {
             }
             p {
                 display: inline-block;
+                font-size: 18px;
+
                 span {
                     color: #171717;
                     font-size: 18px;
@@ -1677,33 +1704,123 @@ body {
                     text-decoration-line: underline;
                     &.no-line {
                         text-decoration-line: none;
-                        
                     }
                 }
             }
             &.table {
+                display: block;
+                width: 100%;
                 &::before { display: none; }
+                .shirt-size {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 350px 1fr;
+                    justify-content: space-between;
+                    gap: 50px;
+                    align-items: center;
+                    margin-top: 50px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    h3 { 
+                        color: #171717;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 160%;
+                        padding-bottom: 16px;
+                    }
+
+                }
+
+
             }
         }
     }
 }
-.shirt-size {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-    margin-top: 50px;
-    img {
-        width: 100%;
+.shirt-size__table {
+    width: 100%;
+    thead {
+        background: #F5F5F5;
+        text-align: center;
+        border-top: 2px solid #bebebe;
+        border-bottom: 2px solid #cfcfcf;
+        tr {
+
+            th {
+                padding: 16px;
+                height: 44px;
+                color: #222;
+                font-size: 14px;
+                font-weight: 600;
+                + th {
+                    border-left: 1px solid #cfcfcf;
+                }
+            }
+        }
     }
-    .shirt-size__table {
-        width: 100%;
-        caption {
-            display: block;
+    tbody {
+        tr {
+            border-bottom: 1px solid #cfcfcf;
+            td {
+                text-align: center;
+                padding: 16xp 0;
+                height: 44px;
+                color: #626262;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0.3px;                                    
+                &:nth-child(1) { 
+                    font-weight: 700;
+                }
+                + td {
+                    border-left: 1px solid #cfcfcf;
+                }
+            }
+            
+        }
+    }
+    &.type2 {
+        // display: block;
+        // width: 100%;
+        td {
+            color: #626262;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.3px;            
         }
     }
 }
+.table {
+    &.bus {
+        .grid-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px;
+            img {
+                width: 100%;
+            }
+            table {
+                tr { 
+
+                }
+                th, td { 
+                    text-align: left; 
+                    padding: 12px 16px;
+                    color: #626262;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 130%;
+                    letter-spacing: 0.3px;                    
+                }
+            }
+        }
+    }
+}
+
 .banner03 {
     margin-bottom: 200px;
     width: 100%;
@@ -2441,6 +2558,7 @@ body {
 .pt20 { padding-top: 20px; }
 .pt24 { padding-top: 24px; }
 .pt26 { padding-top: 26px; }
+.pt30 { padding-top: 30px; }
 .pt32 { padding-top: 32px; }
 .pt35 { padding-top: 35px; }
 .pt40 { padding-top: 40px; }
@@ -2450,6 +2568,7 @@ body {
 .pt64 { padding-top: 64px; }
 .pt66 { padding-top: 66px; }
 .pt80 { padding-top: 80px; }
+.pt90 { padding-top: 90px; }
 .pt100 { padding-top: 100px; }
 .pt152 { padding-top: 152px; }
 .pt164 { padding-top: 164px; }
@@ -2458,6 +2577,7 @@ body {
 .pt217 { padding-top: 217px; }
 .pt234 { padding-top: 234px; }
 .pt239 { padding-top: 239px; }
+.pt250 { padding-top: 250px; }
 .pt278 { padding-top: 278px; }
 .pt285 { padding-top: 285px; }
 .pt300 { padding-top: 300px; }

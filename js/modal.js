@@ -94,3 +94,44 @@ $('.btn-close').click(function() {
 
 
 
+
+// 팝업 열기 함수 24.05.28 ysy
+function popup_link_type1(comment, link, button) {
+    var modalSendHTML =
+    '<div class="layer"></div>' +
+    '<div class="alert-modal" id="alertModal1">' +
+    '<div class="alert-modal__title">'+
+    comment+
+    '</div>' +
+    '<button class="btn-close" type="button" location.href='+link+'>'
+    button+
+    '</button>' +
+    '</div>' +
+  
+    $("body").append(modalSendHTML);
+    $(".layer").addClass("active");
+  }
+function popup_link_type1(comment, link, button) {
+    var modalSendHTML =
+    '<div class="layer"></div>' +
+    '<div class="alert-modal" id="alertModal1">' +
+    '<div class="alert-modal__title">'+
+    comment+
+    '</div>' +
+    '<button class="btn-close" type="button" location.href='+link+'>'
+    button+
+    '</button>' +
+    '</div>' +
+  
+    $("body").append(modalSendHTML);
+    $(".layer").addClass("active");
+  }
+
+// 모달 닫기
+$('.btn-close').click(function() {
+    $('.layer').removeClass('active')
+    $('.alert-modal').removeClass('active')
+})
+
+
+
