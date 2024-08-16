@@ -96,21 +96,32 @@ $('.btn-close').click(function() {
 
 
 // 팝업 열기 함수 24.05.28 ysy
-function popup_link_type1(comment, link, button) {
+function modal_type1(comment, button, link) {
+    // 기존 모달이 있으면 제거
+    if ($(".alert-modal").length > 0) {
+        $(".layer, .alert-modal").remove();
+    }
+
     var modalSendHTML =
-    '<div class="layer"></div>' +
-    '<div class="alert-modal" id="alertModal1">' +
-    '<div class="alert-modal__title">'+
-    comment+
-    '</div>' +
-    '<button class="btn-close" type="button" location.href='+link+'>'
-    button+
-    '</button>' +
-    '</div>' +
+        '<div class="layer"></div>' +
+        '<div class="alert-modal" id="alertModal1">' +
+        '<div class="alert-modal__title">' + comment + '</div>' +
+        '<button class="btn-close" type="button">' + button + '</button>' +
+        '</div>';
   
     $("body").append(modalSendHTML);
     $(".layer").addClass("active");
-  }
+
+    // 버튼 클릭 시 링크로 이동하거나 모달을 닫음
+    $(".btn-close").on("click", function() {
+        if (link) {
+            window.location.href = link;
+        } else {
+            $(".layer, .alert-modal").remove();  // 팝업 닫기
+        }
+    });
+}
+
 function popup_link_type1(comment, link, button) {
     var modalSendHTML =
     '<div class="layer"></div>' +
