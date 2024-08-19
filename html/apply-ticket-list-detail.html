@@ -152,32 +152,33 @@
 
             <div class="align vm">
                 <button class="btn-main2 line mt56" type="button" id="cancelPayment">결제 취소</button>
-                <button class="btn-main2 mt56 ml20" type="button" id="editInfo" >신청 정보 수정</button>
+                <button class="btn-main2 mt56 ml20 btn-alert" type="button">신청 정보 수정</button>
             </div>
+
             <div class="layer"></div>
-
-            <div class="alert-modal" id="alertModal1">
-                <div class="alert-modal__title">신청 정보 수정 기간이 지났습니다.</div>
-                <button class="btn-close" type="button">확인</button>
-            </div>
-
             <div class="alert-modal" id="alertModal2">
                 <div class="alert-modal__title">결제를 취소하시겠습니까?</div>
                 <div class="align center mt30 gap12">
-                    <button class="btn-close2" id="btnConfirm" type="button">확인</button>
+                    <button class="btn-close btn-alert2" type="button">확인</button>
                     <button class="btn-close gray" type="button">취소</button>
                 </div>
             </div>
-            <div class="alert-modal" id="alertModal3">
-                <div class="alert-modal__title">결제가 취소되었습니다.</div>
-                <button class="btn-close"  type="button">확인</button>
-            </div>
-            <div class="alert-modal" id="alertModal4">
-                <div class="alert-modal__title">참가권 신청 정보 수정이 완료되었습니다.</div>
-                <button class="btn-close"  type="button" onclick="location.href='apply-ticket-list.html'">확인</button>
-            </div>
+
 </body>
 </html>
+<script>
+    document.querySelectorAll('.btn-alert').forEach(function(button) {
+        button.addEventListener('click', function() {
+            modal_type1('참가권 신청 정보 수정이 완료되었습니다.', '확인', 'apply-ticket-list.html');
+        });
+    });
+    document.querySelectorAll('.btn-alert2').forEach(function(button) {
+        button.addEventListener('click', function() {
+            modal_type1('결제가 취소되었습니다.', '확인', '');
+        });
+    });
+
+</script>
 <script>
     let pos2 = {y:0,y2:0,status:true},tops = 0;
     const elGif = document.querySelector('.ico-heart');

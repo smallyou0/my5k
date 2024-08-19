@@ -239,26 +239,21 @@
                 <strong>60,000</strong>
             </div>
 
-            <button class="btn-main2 mt56" type="button" id="btnPayment">결제하기</button>
+            <button class="btn-main2 mt56 btn-alert" type="button">결제하기</button>
         </div>
     </div>
-    <div class="layer"></div>
-    <div class="alert-modal" id="alertModal1">
-        <div class="alert-modal__title">
-            참가권 선물 신청이 완료되었습니다<br />
-            선물하고 싶은 분께 링크를 전달해 주세요.            
-        </div>
-        <button class="btn-close" type="button">신청내역 확인</button>
-    </div>
-    <div class="alert-modal">
-        <div class="alert-modal__title">{항목}을 입력해주세요.</div>
-        <button class="btn-close" type="button">확인</button>
-    </div>    
-
 
 </body>
 </html>
 <script>
+
+    document.querySelectorAll('.btn-alert').forEach(function(button) {
+        button.addEventListener('click', function() {
+            modal_type1('참가권 선물 신청이 완료되었습니다. <br/> 선물하고 싶은 분께 링크를 전달해 주세요.', '신청내역 확인', 'apply-ticket-present-list.html');
+        });
+    });
+
+
     let pos2 = {y:0,y2:0,status:true},tops = 0;
     const elGif = document.querySelector('.ico-heart');
             window.addEventListener('scroll',function(){

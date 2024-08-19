@@ -1,4 +1,4 @@
-$('#btnPayment').click(function() {
+$('.btn-alert').click(function() {
     $('.layer').addClass('active')
     $('#alertModal1').addClass('active')
 })
@@ -122,21 +122,25 @@ function modal_type1(comment, button, link) {
     });
 }
 
-function popup_link_type1(comment, link, button) {
+function modal_type2(comment, link, button) {
     var modalSendHTML =
-    '<div class="layer"></div>' +
-    '<div class="alert-modal" id="alertModal1">' +
-    '<div class="alert-modal__title">'+
-    comment+
-    '</div>' +
-    '<button class="btn-close" type="button" location.href='+link+'>'
-    button+
-    '</button>' +
-    '</div>' +
-  
+        '<div class="alert-modal" id="alertModal2">' +
+            '<div class="alert-modal__title">' + comment + '</div>' +
+            '<div class="align center mt30 gap12">' +
+                '<button class="btn-close2" id="btnConfirm" type="button">' + button + '</button>' +
+                '<button class="btn-close gray" type="button">취소</button>' +
+            '</div>' +
+        '</div>';
+
     $("body").append(modalSendHTML);
     $(".layer").addClass("active");
-  }
+
+    // "확인" 버튼 클릭 시 링크로 이동
+    $('#btnConfirm').on('click', function() {
+        window.location.href = link;
+    });
+}
+
 
 // 모달 닫기
 $('.btn-close').click(function() {

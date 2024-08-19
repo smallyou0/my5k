@@ -186,7 +186,7 @@
                 </div>
               </div>            
 
-            <button class="btn-main2 mt56" type="button" id="btnPayment">결제하기</button>
+            <button class="btn-main2 mt56 btn-alert" type="button">결제하기</button>
         </div>
     </div>
     <div class="layer"></div>
@@ -201,6 +201,13 @@
 </body>
 </html>
 <script>
+
+    document.querySelectorAll('.btn-alert').forEach(function(button) {
+        button.addEventListener('click', function() {
+            modal_type1('참가권 신청이 완료되었습니다.', '신청내역 확인', 'apply-ticket-list-detail.html');
+        });
+    });
+
     let pos2 = {y:0,y2:0,status:true},tops = 0;
     const elGif = document.querySelector('.ico-heart');
             window.addEventListener('scroll',function(){

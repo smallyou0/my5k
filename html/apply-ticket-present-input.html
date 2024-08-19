@@ -113,7 +113,8 @@
                     </label>
                 </div>
               </div>
-              <button class="btn-main2 mt56" type="button" onclick="location.href='apply-ticket-present-confirm.html'">입력 완료</button>
+              <button class="btn-main2 mt56 btn-alert" type="button" 
+              onclick="location.href='apply-ticket-present-confirm.html'">입력 완료</button>
             <div class="layer"></div>
             <div class="terms-modal" id="termsModal">
                 <div class="terms-modal__title">
@@ -174,7 +175,7 @@
 <script>
     let pos2 = {y:0,y2:0,status:true},tops = 0;
     const elGif = document.querySelector('.ico-heart');
-            window.addEventListener('scroll',function(){
+window.addEventListener('scroll',function(){
                 // console.log(console); 
             pos2.y = window.pageYOffset;
 
