@@ -2507,6 +2507,25 @@ body {
     }
 
 }
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.spinner img {
+    width: 50px; /* 스피너 크기 */
+    height: 50px;
+}
+
+/* 비디오가 로드되면 스피너를 숨김 */
+.video-loaded .spinner {
+    display: none;
+}
+
+
 
 
 

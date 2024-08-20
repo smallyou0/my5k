@@ -30,6 +30,9 @@ $(document).ready(function() {
         // 복제된 요소의 라디오 버튼 id, name 값과 for 값 업데이트
         updateRadioAttributes(newParticipant);
 
+        // "구매자 정보와 동일" 체크박스의 id 및 for 속성 업데이트
+        updateCheckboxAttributes(newParticipant);
+
         // 기존의 .participant 뒤에 새로운 요소를 추가
         $('.participant').last().after(newParticipant);
 
@@ -103,5 +106,14 @@ $(document).ready(function() {
             $(this).attr('name', newName);
             $(this).siblings('label').attr('for', newId);
         });
+    }
+
+    // 체크박스의 id와 for 값을 고유하게 업데이트하는 함수
+    function updateCheckboxAttributes(participant) {
+        const checkbox = participant.find('input[type="checkbox"]');
+        const label = participant.find('label[for="agree"]');
+        const newId = 'agree' + participantCount; // 고유 ID 생성
+        checkbox.attr('id', newId);
+        label.attr('for', newId);
     }
 });

@@ -33,7 +33,10 @@
 </head>
 <body>
     <article class="m-video">
-            <video width="100%" autoplay muted loop poster="./image/04.jpg">
+        <div id="loading-spinner" class="spinner">
+            <img src="../img/ico_loading.svg" alt="Loading...">
+        </div>
+            <video id="myVideo" width="100%" autoplay muted loop poster="./image/04.jpg">
                 <source src="../img/main/main1.mp4" type="video/mp4">
             </video>
     </article>
@@ -588,5 +591,33 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("myVideo");
+    var spinner = document.getElementById("loading-spinner");
+
+    // 비디오가 완전히 로드되었을 때
+    video.addEventListener("canplaythrough", function() {
+        spinner.style.display = "none"; // 스피너 숨김
+        video.classList.add("video-loaded"); // 비디오 표시
+    });
+
+    // 비디오 재생이 시작될 때
+    video.addEventListener("play", function() {
+        if (spinner.style.display !== "none") {
+            spinner.style.display = "none"; // 비디오 재생 시 스피너 숨김
+        }
+    });
+
+    // 비디오가 로드되지 않았을 때
+    video.addEventListener("waiting", function() {
+        spinner.style.display = "block"; // 로딩 시 스피너 표시
+    });
+});
 
 </script>
