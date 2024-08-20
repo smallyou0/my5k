@@ -1,19 +1,19 @@
 $(document).ready(function() {
     // 최대 참여자 수
     const MAX_PARTICIPANTS = 10;
+    let participantCount = $('.participant').length;
 
     // plus 버튼 클릭 시
     $('#plusParticipant').click(function() {
-        var count = parseInt($('#counter span').text());
-
-        // 현재 참여자 수가 최대치를 초과하는 경우
-        if (count >= MAX_PARTICIPANTS) {
+        if (participantCount >= MAX_PARTICIPANTS) {
             alert('참여자는 최대 ' + MAX_PARTICIPANTS + '명까지 추가할 수 있습니다.');
             return;
         }
 
+        participantCount++;
+        
         // 참여자 수 증가
-        $('#counter span').text(count + 1);
+        $('#counter span').text(participantCount);
 
         // 현재 .participant의 복제본을 생성
         var newParticipant = $('.participant').first().clone();
@@ -25,7 +25,10 @@ $(document).ready(function() {
         newParticipant.find('input[type="text"]').val('');
 
         // 참여자 제목 업데이트 (참여자2, 참여자3, ...)
-        newParticipant.find('.participant-title').text('참여자' + (count + 1));
+        newParticipant.find('.participant-title').text('참여자' + participantCount);
+
+        // 복제된 요소의 라디오 버튼 id, name 값과 for 값 업데이트
+        updateRadioAttributes(newParticipant);
 
         // 기존의 .participant 뒤에 새로운 요소를 추가
         $('.participant').last().after(newParticipant);
@@ -39,11 +42,10 @@ $(document).ready(function() {
 
     // minus 버튼 클릭 시
     $('#minusParticipant').click(function() {
-        var count = parseInt($('#counter span').text());
+        if (participantCount > 1) {
+            participantCount--;
 
-        // 숫자가 1 이상일 때만 감소시킴
-        if (count > 1) {
-            $('#counter span').text(count - 1);
+            $('#counter span').text(participantCount);
 
             // .participant 요소가 2개 이상일 때만 제거
             if ($('.participant').length > 1) {
@@ -60,26 +62,21 @@ $(document).ready(function() {
 
     // 카운터 이벤트 리스너를 설정하는 함수
     function setCounterListeners(participant) {
-        // 모든 카운터 요소를 선택합니다.
-        let counters = participant.find('.counter2');
+        let counters = participant.find('.counter');
 
-        // 각 카운터마다 이벤트 리스너를 설정합니다.
         counters.each(function() {
             const plusBtn = $(this).find('.plus');
             const minusBtn = $(this).find('.minus');
             const number = $(this).find('span');
 
-            // 플러스 버튼 클릭 시 이벤트
             plusBtn.on('click', function() {
                 let count = Number(number.text());
                 count = count + 1;
                 number.text(count);
             });
 
-            // 마이너스 버튼 클릭 시 이벤트
             minusBtn.on('click', function() {
                 let count = Number(number.text());
-                // 카운트가 0 이하로 내려가지 않도록 제한
                 if (count > 0) {
                     count = count - 1;
                     number.text(count);
@@ -94,25 +91,17 @@ $(document).ready(function() {
             $(this).find('.participant-title').text('참여자' + (index + 1));
         });
     }
-});
 
-
-
-
-
-    // 체크박스 전체동의
-    // 체크박스 전체 선택
-    $(".checkbox_group").on("click", "#check_all", function () {
-        $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
-    });
-
-    // 체크박스 개별 선택
-    $(".checkbox_group").on("click", ".normal", function() {
-        var is_checked = true;
-
-        $(".checkbox_group .normal").each(function(){
-            is_checked = is_checked && $(this).is(":checked");
+    // 라디오 버튼의 id, name, for 값을 고유하게 업데이트하는 함수
+    function updateRadioAttributes(participant) {
+        let sizeRadio = participant.find('.size-radio');
+        sizeRadio.find('input[type="radio"]').each(function(index) {
+            const baseId = 'size' + (index + 1);
+            const newId = baseId + '-' + participantCount; // 고유 ID 생성
+            const newName = 'size' + participantCount; // 고유 Name 생성
+            $(this).attr('id', newId);
+            $(this).attr('name', newName);
+            $(this).siblings('label').attr('for', newId);
         });
-
-        $("#check_all").prop("checked", is_checked);
-    });
+    }
+});
