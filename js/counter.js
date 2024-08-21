@@ -3,7 +3,6 @@ $(document).ready(function() {
     const MAX_PARTICIPANTS = 10;
     let participantCount = $('.participant').length;
 
-    // plus 버튼 클릭 시
     $('#plusParticipant').click(function() {
         if (participantCount >= MAX_PARTICIPANTS) {
             alert('참여자는 최대 ' + MAX_PARTICIPANTS + '명까지 추가할 수 있습니다.');
@@ -115,5 +114,7 @@ $(document).ready(function() {
         const newId = 'agree' + participantCount; // 고유 ID 생성
         checkbox.attr('id', newId);
         label.attr('for', newId);
-    }
+    }  
+
+
 });
