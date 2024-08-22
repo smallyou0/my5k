@@ -19,6 +19,9 @@ $(document).ready(function() {
 
         // 복제된 요소 내부의 텍스트 입력란 초기화
         newParticipant2.find('input[type="text"]').val('');
+        newParticipant2.find('input[class="join_size"]').val('S');
+        newParticipant2.find('input[class="join_cnt"]').val('0');
+		
 
         // 참여자 제목 업데이트 (참여자2, 참여자3, ...)
         newParticipant2.find('.participant-title').text('참여자' + participantCount);
@@ -76,6 +79,7 @@ $(document).ready(function() {
                 let count = Number(number.text());
                 count = count + 1;
                 number.text(count);
+				$(this).parents("li").find(".join_cnt").val(count);
             });
 
             minusBtn.on('click', function() {
@@ -83,6 +87,7 @@ $(document).ready(function() {
                 if (count > 0) {
                     count = count - 1;
                     number.text(count);
+					$(this).parents("li").find(".join_cnt").val(count);
                 }
             });
         });

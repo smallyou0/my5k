@@ -7,17 +7,19 @@ jQuery(document).ready(function ($) {
         $('body').append('<footer></footer>');
         $('header').load('./html/header.html');
         $('footer').load('./html/footer.html');
-    } else {
+    } else if ( isIndexPage === '/index.html' ) { 
+        $('body').prepend('<header></header>');
+        $('body').append('<footer></footer>');
+        $('header').load('./html/header.html');
+        $('footer').load('./html/footer.html');
+    } 
+    else {
         // 그 외 페이지일 때 경로 설정
         $('body').prepend('<header></header>');
         $('body').append('<footer></footer>');
         $('header').load('./header.html');
         $('footer').load('./footer.html');
     }
-
-
-
-    
 });
 
 

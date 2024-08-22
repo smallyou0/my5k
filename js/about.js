@@ -64,7 +64,7 @@ $(document).ready(function() {
     var counters = [
         { selector: '.counter1 code.counter1', endValue: 2012 },
         { selector: '.counter1 code.counter2', endValue: 1102 },
-        { selector: '.counter1 code.counter3', endValue: 160 }
+        { selector: '.counter1 code.counter3', endValue: 180 }
     ];
 
     // 각 카운터 요소에 대해 설정
