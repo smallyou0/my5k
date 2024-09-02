@@ -1,0 +1,496 @@
+@import url("./reset.css");
+.hd-zone {
+  height: 60px;
+  background-color: #fe5e00;
+}
+
+.font-title {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 90px;
+  font-style: italic;
+  color: #fe5e00;
+  width: 1280px;
+  margin: 100px auto 50px auto;
+}
+
+.in {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.in > .in-date {
+  width: 300px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.in-title {
+  font-weight: 600;
+  font-size: 50px;
+  width: 1280px;
+  margin: 20px auto;
+}
+
+.invest1 {
+  width: 1280px;
+  margin: 30px auto;
+}
+
+.in-border {
+  height: 250px;
+  border: 1px solid lightgray;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  font-weight: 600;
+  font-size: 25px;
+}
+.in-border > div:nth-of-type(2) {
+  color: #fe5e00;
+}
+.in-border > p:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 70px;
+  position: absolute;
+  right: 3%;
+  bottom: 35%;
+}
+.in-border > p:nth-of-type(1) > code {
+  font-family: inherit;
+}
+.in-border > p:nth-of-type(2) {
+  color: #285fd6;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  right: 3%;
+  bottom: 15%;
+}
+.in-border > p:nth-of-type(2)::before {
+  content: "arrow_drop_down";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  font-size: 30px;
+}
+.in-border > img {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+
+.in-row {
+  width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invest2 {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.invest2:hover {
+  box-shadow: 0px 10px 10px #999999;
+  transform: translateY(-7%);
+  transition: 0.5s;
+}
+
+.table {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3%;
+}
+
+.table1 {
+  width: 48.5%;
+}
+
+.table-title {
+  font-weight: 600;
+  font-size: 50px;
+  margin: 50px auto;
+}
+
+.table-border {
+  width: 100%;
+  margin: 50px 0;
+}
+.table-border th {
+  text-align: start;
+  padding: 20px 20px;
+  background-color: #fe5e00;
+  color: white;
+}
+.table-border td {
+  border: 1px solid rgb(197, 197, 197);
+  border-width: 0 0 1px 0;
+  padding: 20px 20px;
+  transition: 0.5s;
+}
+.table-border td:hover {
+  color: #fe5e00;
+  transition: 0.5s;
+}
+.table-border td.td-line {
+  border: 3px solid rgb(88, 88, 88);
+  border-width: 0 0 3px 0;
+}
+
+.bt-black {
+  width: 1280px;
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bt-black > a {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 100px;
+}
+.bt-black > a::after {
+  content: "arrow_forward_ios";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+}
+.bt-black > a:hover {
+  background-color: #fe5e00;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+  @import url("./reset.css");
+  .hd-zone {
+    height: 60px;
+    background-color: #fe5e00;
+  }
+  .font-title {
+    font-family: "acumin-pro-condensed";
+    font-weight: 900;
+    font-size: 90px;
+    font-style: italic;
+    color: #fe5e00;
+    width: 800px;
+    margin: 100px auto 50px auto;
+  }
+  .in {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .in > .in-date {
+    width: 300px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .in-title {
+    font-weight: 600;
+    font-size: 50px;
+    width: 800px;
+    margin: 20px auto;
+  }
+  .invest1 {
+    width: 800px;
+    margin: 30px auto;
+  }
+  .in-border {
+    height: 250px;
+    border: 1px solid lightgray;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .in-border > div:nth-of-type(2) {
+    color: #fe5e00;
+  }
+  .in-border > p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 70px;
+    position: absolute;
+    right: 3%;
+    bottom: 35%;
+  }
+  .in-border > p:nth-of-type(1) > code {
+    font-family: inherit;
+  }
+  .in-border > p:nth-of-type(2) {
+    color: #285fd6;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
+  }
+  .in-border > p:nth-of-type(2)::before {
+    content: "arrow_drop_down";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 30px;
+  }
+  .in-border > img {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+  }
+  .in-row {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .invest2 {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .invest2:hover {
+    box-shadow: 0px 10px 10px #999999;
+    transform: translateY(-7%);
+    transition: 0.5s;
+  }
+  .table {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3%;
+  }
+  .table1 {
+    width: 48.5%;
+  }
+  .table-title {
+    font-weight: 600;
+    font-size: 50px;
+    margin: 50px auto;
+  }
+  .table-border {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .table-border th {
+    text-align: start;
+    padding: 20px 20px;
+    background-color: #fe5e00;
+    color: white;
+  }
+  .table-border td {
+    border: 1px solid rgb(197, 197, 197);
+    border-width: 0 0 1px 0;
+    padding: 20px 20px;
+  }
+  .table-border td :hover {
+    color: #fe5e00;
+  }
+  .table-border td.td-line {
+    border: 3px solid rgb(88, 88, 88);
+    border-width: 0 0 3px 0;
+  }
+  .bt-black {
+    width: 800px;
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .bt-black > a {
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 100px;
+  }
+  .bt-black > a::after {
+    content: "arrow_forward_ios";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+  }
+  .bt-black > a:hover {
+    background-color: #fe5e00;
+  }
+}
+@media screen and (max-width: 720px) {
+  @import url("./reset.css");
+  .hd-zone {
+    height: 60px;
+    background-color: #fe5e00;
+  }
+  .font-title {
+    font-family: "acumin-pro-condensed";
+    font-weight: 900;
+    font-size: 90px;
+    font-style: italic;
+    color: #fe5e00;
+    width: 500px;
+    margin: 100px auto 50px auto;
+    line-height: 1;
+  }
+  .in {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .in > .in-date {
+    width: 300px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .in-title {
+    font-weight: 600;
+    font-size: 50px;
+    width: 500px;
+    margin: 20px auto;
+  }
+  .invest1 {
+    width: 500px;
+    margin: 30px auto;
+  }
+  .in-border {
+    height: 250px;
+    border: 1px solid lightgray;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .in-border > div:nth-of-type(2) {
+    color: #fe5e00;
+  }
+  .in-border > p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 70px;
+    position: absolute;
+    right: 3%;
+    bottom: 35%;
+  }
+  .in-border > p:nth-of-type(1) > code {
+    font-family: inherit;
+  }
+  .in-border > p:nth-of-type(2) {
+    color: #285fd6;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
+  }
+  .in-border > p:nth-of-type(2)::before {
+    content: "arrow_drop_down";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 30px;
+  }
+  .in-border > img {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+  }
+  .in-row {
+    width: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .invest2 {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .invest2:hover {
+    box-shadow: 0px 10px 10px #999999;
+    transform: translateY(-7%);
+    transition: 0.5s;
+  }
+  .table {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+  }
+  .table1 {
+    width: 100%;
+  }
+  .table-title {
+    font-weight: 600;
+    font-size: 50px;
+    margin: 50px auto;
+  }
+  .table-border {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .table-border th {
+    display: none;
+    text-align: start;
+    padding: 20px 20px;
+    background-color: #fe5e00;
+    color: white;
+  }
+  .table-border td {
+    border: 1px solid rgb(197, 197, 197);
+    border-width: 1px 0 0 0;
+    padding: 20px 20px;
+  }
+  .table-border td :hover {
+    color: #fe5e00;
+  }
+  .table-border td.td-line-top {
+    border: 3px solid rgb(88, 88, 88);
+    border-width: 3px 0 0 0;
+  }
+  .table-border td.td-line {
+    border: 3px solid rgb(88, 88, 88);
+    border-width: 0 0 3px 0;
+  }
+  .bt-black {
+    width: 500px;
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .bt-black > a {
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 100px;
+  }
+  .bt-black > a::after {
+    content: "arrow_forward_ios";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+  }
+  .bt-black > a:hover {
+    background-color: #fe5e00;
+  }
+}
